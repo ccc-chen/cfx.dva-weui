@@ -25,7 +25,6 @@ List()
 Slider()
 Uploader()
 
-
 Artcle()
 Flex()
 Footer()
