@@ -37,7 +37,7 @@ export default ->
 
       c_div
         className: 'page__hd'
-      ,  
+      ,
 
         c_WeuiGalleryTitle {}
 

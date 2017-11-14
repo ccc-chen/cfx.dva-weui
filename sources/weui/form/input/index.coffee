@@ -47,18 +47,7 @@ export default ->
 
     {
       c_div
-      c_i
-      c_a
-      c_h1
-      c_p
       c_label
-      c_input
-      c_span
-      c_img
-      c_button
-      c_textarea
-      c_select
-      c_option
       c_WeuiInputTitle
       c_WeuiInputRadio
       c_WeuiInputSelect
@@ -129,15 +118,15 @@ export default ->
         WeuiInputTextarea {}
 
         c_div
-          className: 'weui-cells__title' 
+          className: 'weui-cells__title'
         , '选择'
 
         WeuiInputSelect {}
-          
+
         c_div
           className: 'weui-cells__title'
         , '选择'
-        
+
         c_WeuiInputSelects {}
 
           c_label

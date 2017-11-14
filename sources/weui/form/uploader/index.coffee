@@ -10,10 +10,6 @@ import WeuiUploader from './uploader'
 CFX = prefixDom {
   default: {
     'div'
-    'i'
-    'a'
-    'h1'
-    'p'
   }
   WeuiUpdTitle
   WeuiUpdGallery
@@ -30,10 +26,6 @@ export default ->
 
     {
       c_div
-      c_i
-      c_a
-      c_h1
-      c_p
       c_WeuiUpdTitle
       c_WeuiUpdGallery
       c_WeuiUploader
@@ -45,14 +37,14 @@ export default ->
         'js_show'
       ].join ' '
     ,
-    
+
       c_div
         className:
           'page__hd'
       ,
 
         c_WeuiUpdTitle {}
-      
+
       c_div
         className: 'page__bd'
       ,

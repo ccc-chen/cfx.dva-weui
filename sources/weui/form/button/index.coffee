@@ -12,10 +12,6 @@ import WeuiBtnTitle from './title'
 CFX = prefixDom {
   default: {
     'div'
-    'i'
-    'a'
-    'h1'
-    'p'
   }
   WeuiBtnPrimary
   WeuiBtnNormal
@@ -35,10 +31,6 @@ export default ->
 
     {
       c_div
-      c_i
-      c_a
-      c_h1
-      c_p
       c_WeuiBtnPrimary
       c_WeuiBtnNormal
       c_WeuiBtnWarn
@@ -54,7 +46,7 @@ export default ->
         'js_show'
       ].join ' '
     ,
-    
+
       c_div
         className:
           'page__hd'
@@ -69,11 +61,8 @@ export default ->
         ].join ' '
       ,
 
-        # Primary
         c_WeuiBtnPrimary {}
-
         c_WeuiBtnNormal {}
-
         c_WeuiBtnWarn {}
 
         c_div
@@ -81,6 +70,5 @@ export default ->
         ,
 
           c_WeuiBtnPlain {}
-
           c_WeuiBtnMini {}
 

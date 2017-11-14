@@ -5,7 +5,6 @@ CFX = prefixDom {
     'div'
     'a'
     'i'
-    'br'
   }
 }
 
@@ -15,7 +14,6 @@ export default ->
     c_div
     c_a
     c_i
-    c_br
   } = CFX
 
   [
@@ -35,9 +33,8 @@ export default ->
             'js_progress'
           ].join ' '
           style:
-            width: '0%'         
+            width: '0%'
 
-					
       c_a
         key: 'weui-progress__opr'
         className: 'weui-progress__opr'
@@ -45,6 +42,6 @@ export default ->
 
         c_i
           key: 'weui-icon-cancel'
-          className: 'weui-icon-cancel' 
-  ]      
+          className: 'weui-icon-cancel'
+  ]
 

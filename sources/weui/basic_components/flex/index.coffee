@@ -9,10 +9,6 @@ import WeuiFlexItem from './item'
 CFX = prefixDom {
   default: {
     'div'
-    'i'
-    'a'
-    'h1'
-    'p'
   }
   WeuiFlexTitle
   WeuiFlexItem
@@ -28,10 +24,6 @@ export default ->
 
     {
       c_div
-      c_i
-      c_a
-      c_h1
-      c_p
       c_WeuiFlexTitle
       c_WeuiFlexItem
     } = CFX

@@ -30,5 +30,5 @@ export default ->
         key: 'weui-footer__text'
         className: 'weui-footer__text'
       , 'Copyright © 2008-2016 weui.io'
-  ]      
+  ]
 

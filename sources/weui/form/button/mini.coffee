@@ -19,6 +19,7 @@ export default ->
         'weui-btn'
         'weui-btn_mini'
         'weui-btn_primary'
+        
       ].join ' '
     , '按钮'
 

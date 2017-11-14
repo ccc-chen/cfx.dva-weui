@@ -25,7 +25,7 @@ export default ->
         className: [
           'weui-btn'
           'weui-btn_primary'
-        ].join ' '  
-      , '上传'   
-  ]      
+        ].join ' '
+      , '上传'
+  ]
 

@@ -5,7 +5,6 @@ CFX = prefixDom {
     'div'
     'p'
     'a'
-    'img'
   }
 }
 
@@ -15,13 +14,13 @@ export default ->
     c_div
     c_p
     c_a
-    c_img
   } = CFX
 
   [
     c_div
       key: 'weui-cells'
       className: 'weui-cells'
+    ,
 
       c_a
         key: 'weui-cell'
@@ -36,14 +35,14 @@ export default ->
           className: 'weui-cell__bd'
         ,
 
-          c_p {} 
+          c_p {}
           , 'cell standard'
 
         c_div
           key: 'weui-cell__ft'
           className: 'weui-cell__ft'
         , '说明文字'
-       
+
       c_a
         key: 'weui-cell2'
         className: [
@@ -63,4 +62,4 @@ export default ->
           key: 'weui-cell__ft2'
           className: 'weui-cell__ft'
         , '说明文字'
-  ]            
+  ]

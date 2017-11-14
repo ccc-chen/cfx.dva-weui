@@ -35,5 +35,4 @@ export default ->
             className: 'weui-input'
             type: "text"
             placeholder: "请输入文本"
-  ]              
-          
+  ]

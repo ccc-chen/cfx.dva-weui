@@ -46,5 +46,5 @@ export default ->
         'weui-btn_plain-disabled'
       ].join ' '
     , '按钮'
-  ]        
+  ]
 

@@ -24,5 +24,5 @@ export default ->
       key: 'desc'
       className: 'page_desc'
     , '表单输入'
-  ]      
+  ]
 

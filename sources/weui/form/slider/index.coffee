@@ -10,10 +10,6 @@ import WeuiSlider2 from './slider2'
 CFX = prefixDom {
   default: {
     'div'
-    'i'
-    'a'
-    'h1'
-    'p'
     'br'
   }
   WeuiSliderTitle
@@ -31,10 +27,6 @@ export default ->
 
     {
       c_div
-      c_i
-      c_a
-      c_h1
-      c_p
       c_br
       c_WeuiSliderTitle
       c_WeuiSlider1
@@ -48,7 +40,7 @@ export default ->
         'js_show'
       ].join ' '
     ,
-    
+
       c_div
         className:
           'page__hd'

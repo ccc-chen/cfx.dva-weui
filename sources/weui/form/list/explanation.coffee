@@ -36,26 +36,27 @@ export default ->
         ,
           c_p
             key: 'text'
-          , '标题文字'  
-     
+          , '标题文字'
+
         c_div
           key: 'weui__ft'
           className: 'weui-cell__ft'
         , '说明文字'
-         
+
       c_div
         key: 'weui_cell'
         className: [
           'weui-cell'
           'weui-cell_swiped'
         ].join ' '
+      ,
 
         c_div
           key: 'weui-cell__bd'
           className: 'weui-cell__bd'
           style:
             transform: 'translateX(-68px)'
-        
+
           c_div
             key: 'weui-cell2'
             className: 'weui-cell'
@@ -72,7 +73,7 @@ export default ->
               key: 'weui-cell__ft2'
               className: 'weui-cell__ft'
             , '说明文字'
-            
+
         c_div
           key: 'weui-cell__ft'
           className: 'weui-cell__ft'
@@ -83,5 +84,5 @@ export default ->
               'weui-swiped-btn'
               'weui-swiped-btn_warn'
             ].join ' '
-          , '删除'       
-  ]            
+          , '删除'
+  ]

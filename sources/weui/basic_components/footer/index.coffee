@@ -45,7 +45,7 @@ export default ->
 
       c_div
         className: 'page__hd'
-      ,  
+      ,
 
         c_WeuiFooterTitle {}
 
@@ -57,7 +57,7 @@ export default ->
       ,
 
         c_WeuiFooter01 {}
-        c_br {}   
+        c_br {}
         c_br {}
         c_WeuiFooter02 {}
         c_br {}

@@ -6,13 +6,13 @@ CFX = prefixDom {
   default: {
     'h1'
     'p'
-    'article'
+    'img'
     'div'
     'section'
     'h2'
     'h3'
-    'img'
     'span'
+    'article'
   }
 }
 
@@ -21,17 +21,16 @@ export default ->
   {
     c_h1
     c_p
-    c_article
+    c_img
     c_div
     c_section
     c_h2
     c_h3
-    c_img
     c_span
+    c_article
   } = CFX
 
   [
-
     c_div
       key: 'page__bd'
       className: 'page__bd'
@@ -52,13 +51,13 @@ export default ->
             key: 'title'
             className: 'title'
           , '章标题'
-              
+
           c_section {}
           ,
 
             c_h3 {}
             , '1.1 节标题'
-                      
+
             c_p {}
             , 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -80,16 +79,16 @@ export default ->
                 key: 'pic_article1'
                 src: pic_article1
                 alt: ''
-                    
+
           c_section {}
           ,
 
             c_h3 {}
             , '1.2 节标题'
-                      
+
             c_p {}
             , 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-               proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'  
-  ]        
+               proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+  ]

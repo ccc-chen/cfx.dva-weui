@@ -37,7 +37,7 @@ export default ->
 
       c_div
         className: 'page__hd'
-      ,  
+      ,
 
         c_WeuiGridTitle {}
 
@@ -45,7 +45,7 @@ export default ->
         className: 'weui-grids'
       ,
 
-        c_WeuiGridMain {}  
+        c_WeuiGridMain {}
 
 
 

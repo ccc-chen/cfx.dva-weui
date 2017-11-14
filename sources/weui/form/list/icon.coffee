@@ -47,7 +47,7 @@ export default ->
           key: 'weui-cell__bd'
           className: 'weui-cell__bd'
         ,
-          
+
           c_p {}
         , '标题文字'
 
@@ -55,7 +55,7 @@ export default ->
           key: 'weui-cell__ft'
           className: 'weui-cell__ft'
         , '说明文字'
-          
+
       c_div
         key: 'weui-cell2'
         className: 'weui-cell'
@@ -87,4 +87,4 @@ export default ->
           key: 'weui-cell__ft'
           className: 'weui-cell__ft'
         , '说明文字'
-  ]            
+  ]

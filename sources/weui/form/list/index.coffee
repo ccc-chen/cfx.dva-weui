@@ -12,10 +12,6 @@ import WeuiListSkip_exp_icon from './skip_exp_icon'
 CFX = prefixDom {
   default: {
     'div'
-    'i'
-    'a'
-    'h1'
-    'p'
   }
 }
 
@@ -29,10 +25,6 @@ export default ->
 
     {
       c_div
-      c_i
-      c_a
-      c_h1
-      c_p
     } = CFX
 
     c_div
@@ -41,6 +33,7 @@ export default ->
         'page'
         'js_show'
       ].join ' '
+    ,
 
       c_div
         key: 'page__hd'
@@ -52,15 +45,15 @@ export default ->
 
       c_div
         key: 'page__bd'
-        className:  
+        className:
           'page__bd'
       ,
 
         c_div
           key: 'weui-cells__title'
-          className:    
+          className:
             'weui-cells__title'
-        , '带说明的列表项'    
+        , '带说明的列表项'
 
         WeuiListExplanation {}
 
@@ -84,7 +77,7 @@ export default ->
 
         c_div
           className: 'weui-cells__title'
-        , '带图标、说明、跳转的列表项' 
+        , '带图标、说明、跳转的列表项'
 
         WeuiListSkip_exp_icon {}
 

@@ -22,7 +22,7 @@ export default ->
         'weui-btn_primary'
       ].join ' '
     , '页面主操作 Normal'
-  
+
     c_a
       key: 'btn_loading'
       className: [
@@ -31,6 +31,7 @@ export default ->
         'weui-btn_loading'
       ].join ' '
     ,
+
       c_i
         key: 'loading'
         className: 'weui-loading'

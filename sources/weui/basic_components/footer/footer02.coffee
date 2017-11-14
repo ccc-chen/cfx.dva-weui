@@ -22,9 +22,9 @@ export default ->
     c_div
       key: 'weui-footer2'
       className: 'weui-footer'
-    ,  
+    ,
 
-      c_p 
+      c_p
         key: 'weui-footer__links'
         className: 'weui-footer__links'
       ,
@@ -39,6 +39,6 @@ export default ->
         key: 'weui-footer__text2'
         className: 'weui-footer__text'
       , 'Copyright © 2008-2016 weui.io'
-  ]      
+  ]
 
 

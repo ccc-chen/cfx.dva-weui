@@ -65,4 +65,4 @@ export default ->
           c_i
             key: 'weui-icon-warm'
             className: 'weui-icon-warn'
-  ]              
+  ]

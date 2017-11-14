@@ -45,4 +45,4 @@ export default ->
         'weui-btn_warn'
       ].join ' '
     , '警告类操作 Disabled'
-  ]      
+  ]

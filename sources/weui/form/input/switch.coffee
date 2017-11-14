@@ -15,6 +15,7 @@ export default ->
     c_input
     c_label
   } = CFX
+
   [
     c_div
       key: 'weui-cells_form'
@@ -30,6 +31,7 @@ export default ->
           'weui-cell'
           'weui-cell_switch'
       ].join ' '
+      ,
 
         c_div
           key: 'weui-cell__bd'
@@ -52,6 +54,7 @@ export default ->
           'weui-cell'
           'weui-cell_switch'
         ].join ' '
+      ,
 
         c_div
           key: 'weui-cell__bd'
@@ -77,4 +80,4 @@ export default ->
             c_div
               key: 'weui-switch-cp__box'
               className: 'weui-switch-cp__box'
-  ]                
+  ]

@@ -30,6 +30,7 @@ export default ->
           'weui-cell'
           'weui-cell_select'
         ].join ' '
+      ,
 
         c_div
           key: 'weui-cell__bd'
@@ -64,6 +65,7 @@ export default ->
           'weui-cell_select'
           'weui-cell_select-after'
         ].join ' '
+      ,
 
         c_div
           key: 'weui-cell__hd'
@@ -100,4 +102,4 @@ export default ->
               key: 'value3'
               defaultValue:"3"
             , '英国'
-  ]                
+  ]

@@ -5,14 +5,11 @@ import pic from '../../../../public/assets/images/pic_160.png'
 CFX = prefixDom {
   default: {
     'div'
-    'span'
-    'a'
     'i'
     'input'
     'ul'
     'li'
     'p'
-    'img'
   }
 }
 
@@ -20,14 +17,11 @@ export default ->
 
   {
     c_div
-    c_span
-    c_a
     c_i
     c_input
     c_ul
     c_li
     c_p
-    c_img
   } = CFX
 
   [
@@ -37,6 +31,7 @@ export default ->
         'weui-cells'
         'weui-cells_form'
       ].join ' '
+    ,
 
       c_div
         key: 'weui-cell'
@@ -51,7 +46,7 @@ export default ->
           c_div
             key: 'weui-uploader'
             className: 'weui-uploader'
-          ,  
+          ,
 
             c_div
               key: 'weui-uploader__hd'
@@ -62,11 +57,11 @@ export default ->
                 key: 'weui_title'
                 className: 'weui-uploader__title'
               , '图片上传'
-                                  
+
               c_div
                 key: 'weui-uploader__info'
                 className: 'weui-uploader__info 0/2'
-                         
+
             c_div
               key: 'weui-uploader__bd'
               className: 'weui-uploader__bd'
@@ -82,27 +77,25 @@ export default ->
                   className: 'weui-uploader__file'
                   style:
                     backgroundImage: "url(#{pic})"
-                
 
-                                          
                 c_li
                   key: 'weui-li2'
                   className: 'weui-uploader__file'
-                  style: 
+                  style:
                     backgroundImage: "url(#{pic})"
-                                           
+
                 c_li
                   key: 'weui-li3'
                   className: 'weui-uploader__file'
                   style:
                     backgroundImage: "url(#{pic})"
-                                      
+
                 c_li
                   key: 'weui-li4'
                   className: [
                     'weui-uploader__file'
                     'weui-uploader__file_status'
-                  ].join ' '  
+                  ].join ' '
                   style:
                     backgroundImage: "url(#{pic})"
                 ,
@@ -115,13 +108,13 @@ export default ->
                     c_i
                       key: 'weui-icon-warn'
                       className: 'weui-icon-warn'
-                                           
+
                 c_li
                   key: 'weui_status'
                   className:[
                     'weui-uploader__file'
                     'weui-uploader__file_status'
-                   ].join ' ' 
+                   ].join ' '
                   style: backgroundImage: "url(#{pic})"
                 ,
 
@@ -129,7 +122,7 @@ export default ->
                     key: 'weui_file-content'
                     className: 'weui-uploader__file-content 50%'
                   , '50%'
-                       
+
               c_div
                 key: 'weui-uploader__input-box'
                 className: 'weui-uploader__input-box'
@@ -140,6 +133,6 @@ export default ->
                   className: 'weui-uploader__input'
                   type: 'file'
                   accept: 'image/*'
-                  multiple: ''       
+                  multiple: ''
   ]
 

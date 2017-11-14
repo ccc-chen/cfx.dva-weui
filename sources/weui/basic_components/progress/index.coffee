@@ -48,7 +48,7 @@ export default ->
 
       c_div
         className: 'page__hd'
-      ,  
+      ,
 
         c_WeuiProgressTitle {}
 
@@ -57,6 +57,7 @@ export default ->
           'page__bd'
           'page__bd_spacing'
         ].join ' '
+      ,
 
         c_WeuiProgressBar {}
         c_br {}
@@ -64,7 +65,7 @@ export default ->
         c_br {}
         c_WeuiProgressBar3 {}
         c_WeuiProgressUpload {}
-        
+
 
 
 

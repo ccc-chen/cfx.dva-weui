@@ -48,11 +48,11 @@ export default ->
             key: 'weui-form-preview__value'
             className: 'weui-form-preview__value'
           , '¥2400.00'
-      
+
       c_div
         key: 'weui-form-preview__bd'
         className: 'weui-form-preview__bd'
-      ,  
+      ,
 
         c_div
           key: 'weui-form-preview__item2'
@@ -68,7 +68,7 @@ export default ->
             key: 'weui-form-preview__value2'
             className: 'weui-form-preview__value'
           , '电动打蛋机'
-           
+
         c_div
           key: 'weui-form-preview__item3'
           className: 'weui-form-preview__item'
@@ -83,7 +83,7 @@ export default ->
             key: 'weui-form-preview__value3'
             className: 'weui-form-preview__value'
           , '名字名字名字'
-       
+
         c_div
           key: 'weui-form-preview__item4'
           className: 'weui-form-preview__item'
@@ -102,7 +102,7 @@ export default ->
       c_div
         key: 'weui-form-preview__ft'
         className: 'weui-form-preview__ft'
-      ,  
+      ,
 
         c_a
           key: 'weui-form-preview__btn'
@@ -111,5 +111,5 @@ export default ->
             'weui-form-preview__btn_primary'
           ].join ' '
         , '操作'
-  ]      
+  ]
 

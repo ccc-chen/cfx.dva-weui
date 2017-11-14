@@ -27,7 +27,7 @@ export default ->
       className: 'weui-agree__text'
     , '阅读并同意'
 
-      c_a 
+      c_a
         key: 'more'
       , '《相关条款》'
-  ]            
+  ]

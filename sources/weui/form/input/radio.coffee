@@ -61,7 +61,6 @@ export default ->
           c_span
             key: 'icon-checked'
             className: 'weui-icon-checked'
-        ,
 
       c_label
         key: 'cell_label'
@@ -75,6 +74,7 @@ export default ->
           key: 'cell__bd'
           className: 'weui-cell__bd'
         ,
+
             c_p {}
             , 'cell standard'
 
@@ -92,7 +92,6 @@ export default ->
 
           c_span
             className: 'weui-icon-checked'
-          ,
 
       c_a
         key: 'cell_link'
@@ -106,4 +105,4 @@ export default ->
           key: 'more'
           className: 'weui-cell__bd'
         , '添加更多'
-  ]          
+  ]

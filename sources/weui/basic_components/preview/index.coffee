@@ -30,7 +30,7 @@ export default ->
       c_br
       c_WeuiPreviewTitle
       c_WeuiPreviewPayment
-      c_WeuiPreviewPayauxiliary    
+      c_WeuiPreviewPayauxiliary
     } = CFX
 
     c_div
@@ -42,7 +42,7 @@ export default ->
 
       c_div
         className: 'page__hd'
-      ,  
+      ,
 
         c_WeuiPreviewTitle {}
 

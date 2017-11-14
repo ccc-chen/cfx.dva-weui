@@ -54,11 +54,11 @@ export default ->
           c_i
             key: 'weui-icon-checked'
             className: 'weui-icon-checked'
-          ,
 
         c_div
           key: 'weui-cell__bd'
           className: 'weui-cell__bd'
+        ,
 
           c_p {}
           , 'standard is dealt for u.'
@@ -70,7 +70,7 @@ export default ->
           'weui-check__label'
         ].join ' '
       ,
-      
+
         c_div
           key: 'weui-cell__hd2'
           className: 'weui-cell__hd'

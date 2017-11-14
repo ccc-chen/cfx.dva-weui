@@ -9,11 +9,6 @@ import WeuiSection from './section'
 CFX = prefixDom {
   default: {
     'div'
-    'i'
-    'a'
-    'h1'
-    'p'
-    'article'
   }
   WeuiArticleTitle
   WeuiSection
@@ -29,11 +24,6 @@ export default ->
 
     {
       c_div
-      c_i
-      c_a
-      c_h1
-      c_p
-      c_article
       c_WeuiArticleTitle
       c_WeuiSection
     } = CFX
@@ -48,7 +38,7 @@ export default ->
 
       c_div
         className: 'page__hd'
-      ,  
+      ,
 
         c_WeuiArticleTitle {}
 

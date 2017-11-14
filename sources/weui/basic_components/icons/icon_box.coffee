@@ -47,7 +47,7 @@ export default ->
           key: 'icon-box__desc'
           className: 'icon-box__desc'
         , '用于表示操作顺利达成'
-  
+
     c_div
       key: 'icon-box2'
       className: 'icon-box'
@@ -79,7 +79,7 @@ export default ->
       key: 'icon-box3'
       className: 'icon-box'
     ,
-      
+
       c_i
         key: 'weui-icon-warn'
         className: [
@@ -105,7 +105,7 @@ export default ->
     c_div
       key: 'icon-box4'
       className: 'icon-box'
-    ,  
+    ,
 
       c_i
         key: 'weui-icon-warn2'
@@ -155,5 +155,5 @@ export default ->
           key: 'icon-box__desc4'
           className: 'icon-box__desc'
         , '用于表示等待'
-  ]      
+  ]
 

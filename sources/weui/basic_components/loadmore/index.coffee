@@ -38,7 +38,7 @@ export default ->
 
       c_div
         className: 'page__hd'
-      ,  
+      ,
 
         c_WeuiLoadmoreTitle {}
 
@@ -46,7 +46,7 @@ export default ->
         className: 'page__bd'
       ,
 
-        c_WeuiLoadmoreMain {}  
+        c_WeuiLoadmoreMain {}
 
 
 

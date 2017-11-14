@@ -4,8 +4,6 @@ import pic from '../../../../public/assets/images/pic_article.png'
 CFX = prefixDom {
   default: {
     'div'
-    'h1'
-    'p'
     'span'
     'i'
     'a'
@@ -16,8 +14,6 @@ export default ->
 
   {
     c_div
-    c_h1
-    c_p
     c_span
     c_i
     c_a
@@ -27,16 +23,16 @@ export default ->
     c_div
       key: 'weui-gallery'
       className: 'weui-gallery'
-      style: 
+      style:
         display: 'block'
-    
+    ,
+
       c_span
         key: 'weui-gallery__img'
         className: 'weui-gallery__img'
         style:
           backgroundImage: "url(#{pic})"
-      
-    
+
       c_div
         key: 'weui-gallery__opr'
         className: 'weui-gallery__opr'
@@ -52,6 +48,6 @@ export default ->
             className: [
               'weui-icon-delete'
               'weui-icon_gallery-delete'
-            ].join ' '  
-  ]      
+            ].join ' '
+  ]
 

@@ -24,5 +24,5 @@ export default ->
       key: 'desc'
       className: 'page__desc'
     , '页脚'
-  ]      
+  ]
 

@@ -35,7 +35,7 @@ export default ->
             c_div
               key: 'weui-cell__bd'
               className: 'weui-cell__bd'
-            
+
             ,
 
               c_textarea
@@ -43,7 +43,7 @@ export default ->
                 className: 'weui-textarea'
                 placeholder: "请输入文本"
                 rows: "3"
-          
+
               c_div
                 key: 'weui-textarea-counter'
                 className: 'weui-textarea-counter'
@@ -51,4 +51,4 @@ export default ->
 
                 c_span {}
                 , '0/200'
-  ] 
+  ]

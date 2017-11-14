@@ -16,7 +16,7 @@ export default ->
     c_i
       key: 'weui-icon-success'
       className: 'weui-icon-success'
-          
+
     c_i
       key: 'weui-icon-success-no-circle'
       className: 'weui-icon-success-no-circle'
@@ -44,5 +44,5 @@ export default ->
     c_i
       key: 'weui-icon-search'
       className: 'weui-icon-search'
-  ]      
+  ]
 

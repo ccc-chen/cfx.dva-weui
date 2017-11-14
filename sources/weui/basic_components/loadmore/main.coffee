@@ -32,7 +32,7 @@ export default ->
 
       c_span
         key: 'weui-loadmore__tips'
-        className: 'weui-loadmore__tips' 
+        className: 'weui-loadmore__tips'
       , '正在加载'
 
     c_div
@@ -47,7 +47,7 @@ export default ->
         key: 'weui-loadmore__tips2'
         className: 'weui-loadmore__tips'
       , '暂无数据'
- 
+
     c_div
       key: 'weui-loadmore_dot'
       className: [
@@ -55,9 +55,10 @@ export default ->
         'weui-loadmore_line'
         'weui-loadmore_dot'
       ].join ' '
+    ,
 
       c_span
         key: 'weui-loadmore__tips3'
         className: 'weui-loadmore__tips'
-  ]      
+  ]
 

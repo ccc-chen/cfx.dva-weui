@@ -31,6 +31,7 @@ export default ->
         'weui-btn_loading'
       ].join ' '
     ,
+    
       c_i
         className: 'weui-loading'
     , '页面次操作 Loading'

@@ -35,12 +35,14 @@ export default ->
         c_div
           key: 'weui-cell__hd'
           className: 'weui-cell__hd'
+        ,
 
           c_select
             key: 'weui-select'
             className: 'weui-select'
             name: "select2"
-      
+          ,
+
             c_option
               key: 'value1'
               defaultValue: "1"
@@ -64,11 +66,11 @@ export default ->
         c_div
           key: 'weui-cell__bd'
           className: 'weui-cell__bd'
-        ,  
+        ,
 
           c_input
             key: 'weui-number'
             className: 'weui-input'
             type: "number"
             placeholder: "请输入号码"
-  ]              
+  ]

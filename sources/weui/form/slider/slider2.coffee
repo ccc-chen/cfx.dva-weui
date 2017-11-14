@@ -3,7 +3,6 @@ import { prefixDom } from 'cfx.dom'
 CFX = prefixDom {
   default: {
     'div'
-    'br'
   }
 }
 
@@ -11,7 +10,6 @@ export default ->
 
   {
     c_div
-    c_br
   } = CFX
 
   [
@@ -26,7 +24,7 @@ export default ->
       ,
 
         c_div
-          key: 'weui-slider__inner' 
+          key: 'weui-slider__inner'
           className: 'weui-slider__inner'
         ,
 
@@ -35,7 +33,7 @@ export default ->
             className: 'weui-slider__track'
             style:
               width: '50%'
-                   
+
           c_div
             key: 'weui-slider__handler'
             className: 'weui-slider__handler'
@@ -45,5 +43,5 @@ export default ->
       c_div
         key: 'weui-slider-box__value'
         className: 'weui-slider-box__value'
-      , '50'        
+      , '50'
   ]
