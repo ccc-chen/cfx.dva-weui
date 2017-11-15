@@ -1,4 +1,3 @@
-# import { storiesOf } from '@storybook/react'
 import { prefixDom } from 'cfx.dom'
 
 import WeuiBtnPrimary from './primary'
