@@ -1,4 +1,5 @@
 import { prefixDom } from 'cfx.dom'
+import pic from '../../../../public/assets/images/icon_tabbar.png'
 
 CFX = prefixDom {
   default: {
@@ -48,7 +49,7 @@ export default ->
 
                     c_img
                         className: 'weui-tabbar__icon'
-                        src: "../../../images/icon_tabbar.png"
+                        src: pic
                         alt: ""
 
                     c_span
@@ -70,7 +71,7 @@ export default ->
                 c_img
                     key: 'icon'
                     className: 'weui-tabbar__icon'
-                    src: '../../../images/icon_tabbar.png'
+                    src: pic
                     alt: ''
                 
                 c_p
@@ -90,7 +91,7 @@ export default ->
                     c_img
                         key: 'icon'
                         className: 'weui-tabbar__icon'
-                        src: '../../../images/icon_tabbar.png'
+                        src: pic
                         alt: ''
 
                     c_span
@@ -115,7 +116,7 @@ export default ->
                 c_img
                     key: 'icon'
                     className: 'weui-tabbar__icon'
-                    src: '../../../images/icon_tabbar.png'
+                    src: pic
                     alt: ''
 
                 c_p

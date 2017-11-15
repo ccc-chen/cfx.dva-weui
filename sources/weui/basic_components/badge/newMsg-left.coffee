@@ -1,4 +1,5 @@
 import { prefixDom } from 'cfx.dom'
+import pic from '../../../../public/assets/images/pic_160.png'
 
 CFX = prefixDom {
   default: {
@@ -40,7 +41,7 @@ export default ->
             marginRight:'10px'
         ,
           c_img
-            src:'../../../../public/assets/imgages/pic_160.png'
+            src: pic
             style:
               width:'50px'
               display:'block'
