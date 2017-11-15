@@ -16,6 +16,17 @@ import Icons from './icons'
 import Loadmore from './loadmore'
 import Preview from './preview'
 import Progress from './progress'
+import Badge from './badge'
+import Panel from './panel'
+import Layers from './layers'
+import Navbar from './navbar'
+import Tabbar from './tabbar'
+import Searchbar from './searchbar'
+import Actionsheet from './actionsheet'
+import Dialog from './dialog'
+import Msg from './msg'
+import Picker from './picker'
+import Toast from './toast'
 
 Welcome()
 Button()
@@ -32,4 +43,14 @@ Icons()
 Loadmore()
 Preview()
 Progress()
-
+Badge()
+Panel()
+Layers()
+Navbar()
+Tabbar()
+Searchbar()
+Actionsheet()
+Dialog()
+Msg()
+Picker()
+Toast()
