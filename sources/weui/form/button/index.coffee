@@ -1,7 +1,6 @@
-import { storiesOf } from '@storybook/react'
+# import { storiesOf } from '@storybook/react'
 import { prefixDom } from 'cfx.dom'
-import '../../../../public/assets/weui.css'
-import '../../../../public/assets/example.css'
+
 import WeuiBtnPrimary from './primary'
 import WeuiBtnNormal from './normal'
 import WeuiBtnWarn from './warn'
@@ -23,52 +22,45 @@ CFX = prefixDom {
 
 export default ->
 
-  storiesOf 'Form', module
+  {
+    c_div
+    c_WeuiBtnPrimary
+    c_WeuiBtnNormal
+    c_WeuiBtnWarn
+    c_WeuiBtnPlain
+    c_WeuiBtnMini
+    c_WeuiBtnTitle
+  } = CFX
 
-  .add 'Button'
+  c_div
+    className: [
+      'page'
+      'button'
+      'js_show'
+    ].join ' '
+  ,
 
-  , =>
+    c_div
+      className:
+        'page__hd'
+    ,
 
-    {
-      c_div
-      c_WeuiBtnPrimary
-      c_WeuiBtnNormal
-      c_WeuiBtnWarn
-      c_WeuiBtnPlain
-      c_WeuiBtnMini
-      c_WeuiBtnTitle
-    } = CFX
+      c_WeuiBtnTitle {}
 
     c_div
       className: [
-        'page'
-        'button'
-        'js_show'
+        'page__bd'
+        'page__bd_spacing'
       ].join ' '
     ,
 
-      c_div
-        className:
-          'page__hd'
-      ,
-
-        c_WeuiBtnTitle {}
+      c_WeuiBtnPrimary {}
+      c_WeuiBtnNormal {}
+      c_WeuiBtnWarn {}
 
       c_div
-        className: [
-          'page__bd'
-          'page__bd_spacing'
-        ].join ' '
+        className: 'weui-btn-area'
       ,
 
-        c_WeuiBtnPrimary {}
-        c_WeuiBtnNormal {}
-        c_WeuiBtnWarn {}
-
-        c_div
-          className: 'weui-btn-area'
-        ,
-
-          c_WeuiBtnPlain {}
-          c_WeuiBtnMini {}
-
+        c_WeuiBtnPlain {}
+        c_WeuiBtnMini {}
