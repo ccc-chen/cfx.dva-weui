@@ -1,6 +1,4 @@
 import { prefixDom } from 'cfx.dom'
-import '../../../../public/assets/weui.css'
-import '../../../../public/assets/example.css'
 
 import WeuiFooterTitle from './title'
 import WeuiFooter01 from './footer01'

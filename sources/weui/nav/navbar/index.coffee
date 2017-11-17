@@ -1,5 +1,5 @@
 import { prefixDom } from 'cfx.dom'
-import WeuiNavbarMain from './main' 
+import WeuiNavbarMain from './main'
 CFX = prefixDom {
   default: {
     'div'
@@ -20,7 +20,6 @@ export default ->
       c_h1
       c_p
       c_WeuiNavbarMain
-      
     } = CFX
 
     c_div
@@ -30,22 +29,21 @@ export default ->
         'js_show'
       ].join ' '
     ,
-    
+
       c_div
         className:
           'page__bd'
         style:
             height:'100%'
       ,
-           
+
         c_WeuiNavbarMain {}
-        
 
       c_div
         className:
           'page__bd'
       ,
-       
+
 
 
 

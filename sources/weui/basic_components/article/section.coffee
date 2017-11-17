@@ -69,7 +69,10 @@ export default ->
 
               c_img
                 key: 'pic_article'
-                src: pic_article
+                src: do ->
+                  if pic_article.src?
+                  then pic_article.src
+                  else pic_article
                 alt: ''
 
               c_span {}
@@ -77,7 +80,10 @@ export default ->
 
               c_img
                 key: 'pic_article1'
-                src: pic_article1
+                src: do ->
+                  if pic_article1.src?
+                  then pic_article1.src
+                  else pic_article
                 alt: ''
 
           c_section {}
