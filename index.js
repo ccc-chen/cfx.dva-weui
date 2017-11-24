@@ -23,5 +23,6 @@ export {
   WeuiMsg,
   WeuiPicker,
   WeuiToast,
-  WeuiSearch 
+  WeuiSearch,
+  WeuiInput_input
 } from 'src'

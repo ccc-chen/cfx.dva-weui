@@ -24,6 +24,8 @@ import WeuiPicker from './operation_feedback/picker/index'
 import WeuiToast from './operation_feedback/toast/index'
 import WeuiSearch from './search/searchbar/index'
 
+import WeuiInput_input from './form/input/input'
+
 export {
   WeuiArticle
   WeuiBadge
@@ -50,4 +52,5 @@ export {
   WeuiPicker
   WeuiToast
   WeuiSearch
+  WeuiInput_input
 }

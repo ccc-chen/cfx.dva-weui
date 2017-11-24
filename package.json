@@ -1,4 +1,5 @@
 {
+  "version": "0.0.1",
   "scripts": {
     "start": "start-storybook -p 8000 -c .storybook"
   },
