@@ -26,7 +26,7 @@ import cell_access_a from '../../public/panel/cell_access_a'
 import cell_hd from '../../public/panel/cell_hd_div'
 import img_img from '../../public/panel/img_img'
 import cell_primary from '../../public/panel/cell_bd_primary_div'
-import label_p from '../../public/article/label_p'
+import label_p from '../../public/label/label_p'
 import label_ul from '../../public/panel/media_ul'
 import label_li from '../../public/panel/media_li'
 
