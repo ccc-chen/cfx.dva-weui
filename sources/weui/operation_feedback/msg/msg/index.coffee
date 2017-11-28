@@ -1,8 +1,11 @@
 
 import { prefixDom } from 'cfx.dom'
-import WeuiMsgTitle from './title'
-import WeuiMsgMain from './main'
-
+import Page from '../../../public/page/page_div'
+import Title_h1 from '../../../public/title/title_h1'
+import Title_p from '../../../public/title/title_p'
+import btn from '../../../public/btn/btn'
+import Page__hd from '../../../public/page/page__hd_div'
+import Page__bd from '../../../public/page/page__bd_div'
 CFX = prefixDom {
   default: {
     'div'
@@ -13,56 +16,56 @@ CFX = prefixDom {
     'img'
     'strong'
   }
-    WeuiMsgTitle
-    WeuiMsgMain
+    Title_h1
+    Title_p
+    Page
+    Page__hd
+    Page__bd
+    btn
 }
 
 export default ->
 
 
     {
-      c_div
-      c_i
-      c_a
-      c_h1
-      c_p
-      c_img
-      c_strong
-      c_WeuiMsgTitle
-      c_WeuiMsgMain
+      c_Title_h1
+      c_Title_p
+      c_Page
+      c_Page__hd
+      c_Page__bd
+      c_btn
     } = CFX
 
-    c_div
-      className: [
-        'page'
-        'actionsheet'
-        'js_show'
-      ].join ' '
+    c_Page
+      kind: 'page_actionsheet'
     ,
     
-      c_div
-        className:
-          'page__hd'
-      ,
-           
-        c_WeuiMsgTitle {}
+      c_Page__hd
+        kind: 'page__hd'
+      ,           
+        c_Title_h1
+          kind: 'page__title'
+        ,'Msg'
+        c_Title_p
+          kind: 'page__desc'
+        ,'提示页'
         
 
-      c_div
-        className:[
-          'page__bd'
-          'page__bd_spacing'
-        ].join ''
+      c_Page__bd
+        kind: 'page__bd_sp'
       ,
-        c_WeuiMsgMain {}
+        c_btn
+          kind: 'btn_default'
+        , '成功提示页'
 
-      c_div
-        className: 'page__ft'
-      ,
-        c_a
-        ,
-          c_img
-            src: '../../../assets/images/icon_footer_link.png'
+        c_btn
+          kind: 'btn_default'
+        , '失败提示页'
+
+      c_Page
+        kind: 'page__ft'
+      
+        
 
 
 

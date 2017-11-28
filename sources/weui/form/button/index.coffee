@@ -1,11 +1,11 @@
 import { prefixDom } from 'cfx.dom'
 
-import page_btn from '../../public/pages/page_btn'
-import page__bd_spacing from '../../public/pages/page__bd_spacing'
-import page__hd from '../../public/pages/page__hd'
+import page_button from '../../public/page/page_div'
+import page__bd_sp from '../../public/page/page__bd_div'
+import page__hd from '../../public/page/page__hd_div'
 import basicI from '../../public/basicElements/i_icon'
-import WeuiTitleH from '../../public/pages/title_h1'
-import WeuiTitleP from '../../public/pages/title_p'
+import title_h1 from '../../public/title/title_h1'
+import title_p from '../../public/title/title_p'
 import Btn from '../../public/btn/btn'
 import BtnDiv from '../../public/btn/btn_div'
 
@@ -14,14 +14,13 @@ CFX = prefixDom {
     'div'
   }
   basicI
-  WeuiTitleH
-  WeuiTitleP
-  page_btn
-  page__bd_spacing
+  title_h1
+  title_p
+  page_button
+  page__bd_sp
   page__hd
   Btn
   BtnDiv
-
 }
 
 export default ->
@@ -29,25 +28,31 @@ export default ->
   {
     c_basicI
     c_div
-    c_WeuiTitleH
-    c_WeuiTitleP
-    c_page_btn
-    c_page__bd_spacing
+    c_title_h1
+    c_title_p
+    c_page_button
+    c_page__bd_sp
     c_page__hd
     c_Btn
     c_BtnDiv
   } = CFX
 
-  c_page_btn {}
+  c_page_button
+    kind: 'page_button'
   ,
-    c_page__hd {}
+    c_page__hd
+      kind: 'page__hd'
     ,
-      c_WeuiTitleH {}
-      ,'Button'
-      c_WeuiTitleP {}
+      c_title_h1
+        kind: 'page__title'
+      , 'Button'
+
+      c_title_p
+        kind: 'page__desc'
       , '按钮'
     
-    c_page__bd_spacing {}
+    c_page__bd_sp
+      kind: 'page__bd_sp'
     ,
       # primary
       c_Btn
@@ -68,7 +73,7 @@ export default ->
         state: 'disabled'
       , '页面主操作 Disabled'
       
-      # default
+    #   # default
       c_Btn
         kind: 'default'
         state: 'normal'

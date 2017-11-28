@@ -1,17 +1,22 @@
 import { prefixDom } from 'cfx.dom'
-
-import WeuiSliderTitle from './title'
-import WeuiSlider1 from './slider1'
-import WeuiSlider2 from './slider2'
+import page_button from '../../public/page/page_div'
+import title_h1 from '../../public/title/title_h1'
+import title_p from '../../public/title/title_p'
+import page__bd_sp from '../../public/page/page__bd_div'
+import page__hd from '../../public/page/page__hd_div'
+import SliderDiv from '../../public/slider/slider_div'
 
 CFX = prefixDom {
   default: {
     'div'
     'br'
   }
-  WeuiSliderTitle
-  WeuiSlider1
-  WeuiSlider2
+  page_button
+  title_h1
+  title_p
+  page__bd_sp
+  page__hd
+  SliderDiv
 }
 
 export default ->
@@ -19,36 +24,79 @@ export default ->
   {
     c_div
     c_br
-    c_WeuiSliderTitle
-    c_WeuiSlider1
-    c_WeuiSlider2
+    c_page_button
+    c_title_h1
+    c_title_p  
+    c_page__bd_sp
+    c_page__hd
+    c_SliderDiv
   } = CFX
 
-  c_div
-    className: [
-      'page'
-      'button'
-      'js_show'
-    ].join ' '
+  c_page_button
+    kind: 'page_button'
   ,
 
-    c_div
-      className:
-        'page__hd'
+    c_page__hd
+      kind: 'page__hd'
     ,
 
-      c_WeuiSliderTitle {}
+      c_title_h1
+        kind: 'page__title'
+      , 'Slider'
 
-    c_div
-      className: [
-        'page__bd'
-        'page__bd_spacing'
-      ].join ' '
+      c_title_p
+        kind: 'page__desc'
+      , '滑块'
+
+    c_page__bd_sp
+      kind: 'page__bd_sp'
     ,
+      #slider1
+      c_SliderDiv
+        kind: 'slider'
+      ,
 
-      c_WeuiSlider1 {}
+        c_SliderDiv
+          kind: 'slider__inner'
+        ,
+
+          c_SliderDiv
+            kind: 'slider__track'
+            style:
+              width: '0'
+
+          c_SliderDiv
+            kind: 'slider__handler'
+            style:
+              left: '0'
+
       c_br {}
-      c_WeuiSlider2 {}
+      # slider2
+      c_SliderDiv
+        kind: 'slider-box'
+      ,
+
+        c_SliderDiv
+          kind: 'slider'
+        ,
+
+          c_SliderDiv
+            kind: 'slider__inner'
+          ,
+
+            c_SliderDiv
+              kind: 'slider__track'
+              style:
+                width: '50%'
+
+            c_SliderDiv
+              kind: 'slider__handler'
+              style:
+                left: '50%'
+
+        c_SliderDiv
+          kind: 'slider-box__value'
+        , '50'
 
 
 

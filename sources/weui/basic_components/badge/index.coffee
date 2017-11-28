@@ -4,18 +4,18 @@ import page__hd from '../../public/page/page__hd_div'
 import page__bd from '../../public/page/page__bd_div'
 import title_p from '../../public/title/title_p'
 import title_h1 from '../../public/title/title_h1'
-import label_h1 from '../../public/label/label_h1'
+import badge_h1 from '../../public/badge/badge_h1'
 import cells__title from '../../public/cells/cells__title_div'
 import cells from '../../public/cells/cells_div'
 import cells_access from '../../public/cells/cell_access'
 import cell__bd from '../../public/cells/cell__bd'
 import cell__ft from '../../public/cells/cell__ft'
-import label_span from '../../public/label/label_span'
+import label_span from '../../public/badge/label_span'
 import badge_dot from '../../public/badge/badge'
 import cell__hd from '../../public/cells/cell__hd'
 import img_pic_160 from '../../public/img/img_pic_160'
 import badge_span from '../../public/badge/badge_span'
-import label_p from '../../public/label/label_p'
+import badge_p from '../../public/badge/badge_p'
 
 CFX = prefixDom {
   default: {
@@ -25,7 +25,7 @@ CFX = prefixDom {
   page__hd
   page__bd
   title_p
-  label_h1
+  badge_h1
   title_h1
   cells__title
   cells
@@ -37,7 +37,7 @@ CFX = prefixDom {
   cell__hd
   img_pic_160
   badge_span
-  label_p
+  badge_p
 }
 
 export default ->
@@ -48,7 +48,7 @@ export default ->
     c_page__hd
     c_page__bd
     c_title_p
-    c_label_h1
+    c_badge_h1
     c_title_h1
     c_cells__title
     c_cells
@@ -60,7 +60,7 @@ export default ->
     c_cell__hd
     c_img_pic_160
     c_badge_span
-    c_label_p
+    c_badge_p
   } = CFX
 
   c_page
@@ -143,11 +143,11 @@ export default ->
           c_cell__bd
             kind: ' '
 
-            c_label_p
+            c_badge_p
               kind: ' '
             , '联系人名称'  
 
-            c_label_p
+            c_badge_p
               kind: ' '
               sty: 'fontcolor'
             , '摘要信息'
