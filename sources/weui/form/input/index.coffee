@@ -1,623 +1,619 @@
 import { prefixDom } from 'cfx.dom'
-import Page from '../../public/page/page_div'
-import Title_h1 from '../../public/title/title_h1'
-import Title_p from '../../public/title/title_p'
-import Input_div from '../../public/input/input_div'
-import Input_span from '../../public/input/Input_span'
-import Input_label from '../../public/input/Input_label'
-import Input from '../../public/input/Input'
-import Input_p from '../../public/input/Input_p'
-import Input_a from '../../public/input/Input_a'
-import Input_i from '../../public/input/Input_i'
-import Input_select from '../../public/input/Input_select'
-import Input_option from '../../public/input/Input_option'
-import Btn from '../../public/btn/btn'
-import Input_btn from '../../public/input/Input_button'
-import Input_img from '../../public/img/Input_img'
-import Input_textarea from '../../public/input/Input_textarea'
-import Page_hd from '../../public/page/page__hd_div'
-import Page_bd from '../../public/page/page__bd_div'
+import page from '../../public/page/page_div'
+import title_h1 from '../../public/title/title_h1'
+import title_p from '../../public/title/title_p'
+import input_div from '../../public/input/input_div'
+import input_span from '../../public/input/input_span'
+import input_label from '../../public/input/input_label'
+import input from '../../public/input/input'
+import input_p from '../../public/input/input_p'
+import input_a from '../../public/input/input_a'
+import input_i from '../../public/input/input_i'
+import input_select from '../../public/input/input_select'
+import input_option from '../../public/input/input_option'
+import btn from '../../public/btn/btn'
+import input_btn from '../../public/input/input_button'
+import input_img from '../../public/img/input_img'
+import input_textarea from '../../public/input/input_textarea'
+import page_hd from '../../public/page/page__hd_div'
+import page_bd from '../../public/page/page__bd_div'
 
 CFX = prefixDom {
   default: {
     'div'
     'label'
   }
-  Title_h1
-  Title_p
-  Page
-  Page_hd
-  Page_bd
-  Input_div
-  Input_span
-  Input_label
-  Input
-  Input_p
-  Input_a
-  Input_i
-  Input_btn
-  Input_img
-  Input_textarea
-  Input_select
-  Input_option
-  Btn
+  title_h1
+  title_p
+  page
+  page_hd
+  page_bd
+  input_div
+  input_span
+  input_label
+  input
+  input_p
+  input_a
+  input_i
+  input_btn
+  input_img
+  input_textarea
+  input_select
+  input_option
+  btn
 }
 
 export default ->
 
   {
-    c_Title_h1
-    c_Title_p
-    c_WeuiInputSelect
-    c_WeuiInputSelects
-    c_Page
-    c_Page_hd
-    c_Page_bd
-    c_Input_div
-    c_Input_span
-    c_Input_label
-    c_Input
-    c_Input_p
-    c_Input_a
-    c_Input_i
-    c_Input_btn
-    c_Input_img
-    c_Input_textarea
-    c_Input_select
-    c_Input_option
-    c_Btn
+    c_title_h1
+    c_title_p
+    c_page
+    c_page_hd
+    c_page_bd
+    c_input_div
+    c_input_span
+    c_input_label
+    c_input
+    c_input_p
+    c_input_a
+    c_input_i
+    c_input_btn
+    c_input_img
+    c_input_textarea
+    c_input_select
+    c_input_option
+    c_btn
   } = CFX
 
-  c_Page
+  c_page
     kind: 'page_input'
   ,
-    c_Page_hd
+    c_page_hd
       kind: 'page__hd'
     ,
 
-      c_Title_h1
+      c_title_h1
         kind: 'page__title'
       ,'Input'
-      c_Title_p
+      c_title_p
         kind: 'page__desc'
       ,'表单输入'
 
-    c_Page_bd
+    c_page_bd
       kind: 'page__bd'
     , 
       # radiobox
 
-      c_Input_div
+      c_input_div
         kind: 'cells__title'
       , '单选列表项'
       
-      c_Input_div
+      c_input_div
         kind: 'cells_radio'
       ,
 
-        c_Input_label
+        c_input_label
           kind:'cell_check__label'
         ,
 
-          c_Input_div
+          c_input_div
             kind: 'cell__bd'
           ,
 
-            c_Input_p {}
+            c_input_p {}
             , 'cell standard'
 
-          c_Input_div
+          c_input_div
             kind: 'cell__ft'
           ,
-            c_Input
+            c_input
               kind: 'check'
-              name: 'radio1'
-              type: 'radio'
+              names: 'radio1'
+              types: 'radio'
             
-            c_Input_span
+            c_input_span
               kind: 'icon-checked'
 
-        c_Input_label
+        c_input_label
           kind: 'cell_check__label'
         ,
 
-          c_Input_div
+          c_input_div
             kind: 'cell__bd'
           ,
 
-              c_Input_p {}
+              c_input_p {}
               , 'cell standard'
 
-          c_Input_div
+          c_input_div
             kind: 'cell__ft'
           ,
 
-            c_Input
+            c_input
               kind: 'check'
-              name: "radio1"
-              type: 'radio'
-              defaultChecked: "true"
+              names: "radio1"
+              types: 'radio'
+              defaultCheckeds: "true"
 
-            c_Input_span
+            c_input_span
               kind: 'icon-checked'
 
-        c_Input_a
+        c_input_a
           kind: 'cell_link'
         ,
 
-          c_Input_div
+          c_input_div
             kind: 'cell__bd'
           , '添加更多'
 
       
       #checkbox
 
-      c_Input_div
+      c_input_div
         kind: 'cells__title'
       , '复选列表项'
       
-      c_Input_div
+      c_input_div
         kind: 'cells_checkbox'
       ,
-        c_Input_label
+        c_input_label
           kind: 'cell_check__label'
         ,
-          c_Input_div
+          c_input_div
             kind: 'cell__hd'
           ,
-            c_Input
+            c_input
               kind: 'check'
-              type: 'checkbox'
-              name: "checkbox1"
-              defaultChecked: true
+              types: 'checkbox'
+              names: "checkbox1"
+              defaultCheckeds: 'true'
 
-            c_Input_i
+            c_input_i
               kind: 'icon-checked'
 
-          c_Input_div
+          c_input_div
             kind: 'cell__bd'
           ,
-            c_Input_p {}
+            c_input_p {}
             , 'standard is dealt for u.'
 
-        c_Input_label
+        c_input_label
           kind: 'cell_check__label'
         ,
-          c_Input_div
+          c_input_div
             kind: 'cell__hd'
           ,
-            c_Input
+            c_input
               kind: 'check'
-              type: "checkbox"
-              name: "checkbox1"
+              types: "checkbox"
+              names: "checkbox1"
 
-            c_Input_i
+            c_input_i
               kind: 'icon-checked'
 
-          c_Input_div
+          c_input_div
             kind: 'cell__bd'
           ,
 
-            c_Input_p {}
+            c_input_p {}
             , 'standard is dealicient for u.'
 
-        c_Input_a
+        c_input_a
           kind: 'cell_link'
         ,
-          c_Input_div
+          c_input_div
             kind: 'cell__bd'
           , '添加更多'
 
-      
-
       #form
-      c_Input_div
+      c_input_div
         kind: 'cells__title'
       , '表单'
       
-      c_Input_div
+      c_input_div
         kind: 'cells_form'
       ,
 
-        c_Input_div
+        c_input_div
           kind: 'cell'
         ,
 
-          c_Input_div
+          c_input_div
             key: 'weui-cell__hd'
             kind: 'cell__hd'
           ,
 
-            c_Input_label
+            c_input_label
               kind: 'label'
             , 'qq'
 
 
-          c_Input_div
+          c_input_div
             kind: 'cell__bd'
           ,
 
-            c_Input
+            c_input
               kind: 'input'
-              type: "number"
+              types: "number"
               placeholder: "请输入qq号"
 
-        c_Input_div
+        c_input_div
           kind: 'cell_vcode'
         ,
 
-          c_Input_div
+          c_input_div
             key: 'weui-cell__hd'
             kind: 'cell__hd'
           ,
 
-            c_Input_label
+            c_input_label
               kind: 'label'
             , '手机号'
 
-          c_Input_div
+          c_input_div
             kind: 'cell__bd'
           ,
 
-            c_Input
+            c_input
               kind: 'input'
-              type: "tel"
+              types: "tel"
               placeholder: "请输入手机号"
 
-          c_Input_div
+          c_input_div
             kind: 'cell__ft'
           ,
 
-            c_Input_btn
+            c_input_btn
               kind: 'vcode_btn'
             , '获取验证码'
 
-        c_Input_div
+        c_input_div
           kind: 'cell'
         ,
 
-          c_Input_div
+          c_input_div
             kind: 'cell__hd'
           ,
 
-            c_Input_label
+            c_input_label
               kind: 'label'
             , '日期'
 
-          c_Input_div
+          c_input_div
             kind: 'cell__bd'
           ,
 
-            c_Input
+            c_input
               kind: 'input'
-              type: 'date'
-              value: ''
+              types: 'date'
+              values: ' '
 
-        c_Input_div
+        c_input_div
           kind: 'cell'
         ,
 
-          c_Input_div
+          c_input_div
             kind: 'cell__hd'
           ,
 
-            c_Input_label
+            c_input_label
               kind: 'label'
             , '时间'
 
-          c_Input_div
+          c_input_div
             kind: 'cell__bd'
           ,
 
-            c_Input
+            c_input
               kind: 'input'
-              type: 'datetime-local'
-              value: ''
+              types: 'datetime-local'
+              values: ''
               placeholder: ''
 
 
-        c_Input_div
+        c_input_div
           kind: 'cell_vcode'
         ,
 
-          c_Input_div
+          c_input_div
             kind: 'cell__hd'
           ,
 
-            c_Input_label
+            c_input_label
               kind: 'label'
             , '验证码'
 
-          c_Input_div
+          c_input_div
             kind: 'cell__bd'
           ,
 
-            c_Input
+            c_input
               kind: 'input'
-              type: "number"
+              types: "number"
               placeholder: "请输入验证码"
 
-          c_Input_div
+          c_input_div
             kind: 'cell__ft'
           ,
 
-            c_Input_img
+            c_input_img
               kind: 'vcode_img'
               sty: 'img'
 
       #warn
-      c_Input_div
+      c_input_div
         kind: 'cells__tips'
       , '底部说明文字底部说明文字'
 
-      c_Input_div
+      c_input_div
         kind: 'cells__title'
       , '表单报错'
       
-      c_Input_div
+      c_input_div
         kind: 'cells_form'
       ,
 
-        c_Input_div
+        c_input_div
           kind: 'cell_warn'
         ,
 
-          c_Input_div
+          c_input_div
             kind: 'cell__hd'
           ,
 
-            c_Input_label
+            c_input_label
               kind: 'label'
             , '卡号'
 
-          c_Input_div
+          c_input_div
             kind: 'cell__bd'
           ,
 
-            c_Input
+            c_input
               kind: 'input'
-              type: "number"
+              types: "number"
               defaultValue: "weui input error"
               placeholder: "请输入卡号"
 
-          c_Input_div
+          c_input_div
             kind: 'cell__ft'
           ,
 
-            c_Input_i
+            c_input_i
               kind: 'icon-warn'
       #switch
 
-      c_Input_div
+      c_input_div
         kind: 'cells__title'
       , '开关'
       
-      c_Input_div
+      c_input_div
         kind: 'cells_form'
       ,
 
-        c_Input_div
+        c_input_div
           kind: 'cell_switch'
         ,
 
-          c_Input_div
+          c_input_div
             kind: 'cell__bd'
           , '标题文字'
 
-          c_Input_div
+          c_input_div
             kind: 'cell__ft'
           ,
 
-          c_Input
+          c_input
             kind: 'switch'
-            type: "checkbox"
+            types: "checkbox"
 
-        c_Input_div
+        c_input_div
           kind: 'cell_switch'
         ,
 
-          c_Input_div
+          c_input_div
             kind: 'cell__bd'
           , '兼容IE Edge的版本'
 
-          c_Input_div
+          c_input_div
             kind: 'cell__ft'
           ,
 
-            c_Input_label
+            c_input_label
               kind: 'switch-cp'
             ,
 
-              c_Input
+              c_input
                 kind: 'switch-cp__input'
-                type: "checkbox"
-                defaultChecked: "checked"
+                types: "checkbox"
+                defaultCheckeds: "checked"
 
-              c_Input_div
+              c_input_div
                 kind: 'switch-cp__box'
 
       
       #文本框
-      c_Input_div
+      c_input_div
         kind: 'cells__title'
       , '文本框'
       
-      c_Input_div
+      c_input_div
         kind: 'cells_cell'
       ,
-        c_Input {
+        c_input 
           kind: 'input'
-          type: "text"
+          types: "text"
           placeholder: '请输入文本'
-        }
+        
 
       
       #文本域
-      c_Input_div
+      c_input_div
         kind: 'cells__title'
         '文本域'
-      c_Input_div
+      c_input_div
         kind: 'cells_form'
       ,
 
-        c_Input_div
+        c_input_div
           kind: 'cell'
         ,
 
-          c_Input_div
+          c_input_div
             kind: 'cell__bd'
           ,
 
-            c_Input_textarea
+            c_input_textarea
               kind: 'textarea'
               placeholder: "请输入文本"
               rows: "3"
 
-            c_Input_div
+            c_input_div
               kind: 'textarea-counter'
             ,
 
-              c_Input_span
+              c_input_span
                 kind: ' '
               , '0/200'
 
       
       #选择
-      c_Input_div
+      c_input_div
         kind: 'cells__title'
       , '选择'
       
-      c_Input_div
+      c_input_div
         kind: 'cells'
       ,
 
-        c_Input_div
+        c_input_div
           kind: 'cell_select_before'
 
-          c_Input_div
+          c_input_div
             kind: 'cell__hd'
           ,
 
-            c_Input_select
+            c_input_select
               kind: 'select'
               name: "select2"
             ,
 
-              c_Input_option
+              c_input_option
                 defaultValue: "1"
               , '+86'
 
-              c_Input_option
+              c_input_option
                 defaultValue: "2"
               , '+80'
 
-              c_Input_option
+              c_input_option
                 defaultValue: "3"
               , '+84'
 
-              c_Input_option
+              c_input_option
                 defaultValue: "4"
               , '+87'
 
-          c_Input_div
+          c_input_div
             kind: 'cell__bd'
           ,
 
-            c_Input
+            c_input
               kind: 'input'
-              type: "number"
+              types: "number"
               placeholder: "请输入号码"
 
       #复合选择
-      c_Input_div
+      c_input_div
         kind: 'cells__title'
       , '选择'
       
-      c_Input_div
+      c_input_div
         kind: 'cells'
       ,
 
-        c_Input_div
+        c_input_div
           kind: 'cell_select'
         ,
 
-          c_Input_div
+          c_input_div
             kind: 'cell__bd'
           ,
 
-            c_Input_select
+            c_input_select
               kind: 'select'
               name: "select1"
             ,
 
-              c_Input_option
+              c_input_option
                 defaultValue: "1"
               , '微信号'
 
-              c_Input_option
+              c_input_option
                 defaultValue: "2"
               , 'QQ号'
 
-              c_Input_option
+              c_input_option
                 defaultValue: "3"
               , 'Email'
 
-        c_Input_div
+        c_input_div
           kind: 'cell_select_after'
         ,
 
-          c_Input_div
+          c_input_div
             kind: 'cell__hd'
           ,
 
-            c_Input_label
+            c_input_label
               key: 'weui-label'
               kind: 'label'
             , '国家/地区'
 
-          c_Input_div
+          c_input_div
             kind: 'cell__bd'
           ,
 
-            c_Input_select
+            c_input_select
               kind: 'select'
               name: "select2"
             ,
 
-              c_Input_option
+              c_input_option
                 defaultValue: "1"
               , '中国'
 
-              c_Input_option
+              c_input_option
                 key: 'value2'
                 defaultValue: "2"
               , '美国'
 
-              c_Input_option
+              c_input_option
                 defaultValue:"3"
               , '英国'
 
         #agree
-        c_Input_label
+        c_input_label
           kind: 'agree'
         ,
-          c_Input
+          c_input
             kind: 'agree__checkbox'
-            type: "checkbox"
+            types: "checkbox"
 
-          c_Input_span
+          c_input_span
             kind: 'agree__text'
           , '阅读并同意'
 
-            c_Input_a {}
+            c_input_a {}
             , '《相关条款》'
 
         #btn area
-        c_Input_div
+        c_input_div
           key: 'btn-area'
           kind: 'btnarea'
         ,
-          c_Btn
+          c_btn
             kind: 'primary'
             state: 'normal'
           , '确定'

@@ -4,7 +4,7 @@ import title_h1 from '../../public/title/title_h1'
 import title_p from '../../public/title/title_p'
 import page__bd_sp from '../../public/page/page__bd_div'
 import page__hd from '../../public/page/page__hd_div'
-import SliderDiv from '../../public/slider/slider_div'
+import slider_div from '../../public/slider/slider_div'
 
 CFX = prefixDom {
   default: {
@@ -16,7 +16,7 @@ CFX = prefixDom {
   title_p
   page__bd_sp
   page__hd
-  SliderDiv
+  slider_div
 }
 
 export default ->
@@ -29,7 +29,7 @@ export default ->
     c_title_p  
     c_page__bd_sp
     c_page__hd
-    c_SliderDiv
+    c_slider_div
   } = CFX
 
   c_page_button
@@ -52,49 +52,49 @@ export default ->
       kind: 'page__bd_sp'
     ,
       #slider1
-      c_SliderDiv
+      c_slider_div
         kind: 'slider'
       ,
 
-        c_SliderDiv
+        c_slider_div
           kind: 'slider__inner'
         ,
 
-          c_SliderDiv
+          c_slider_div
             kind: 'slider__track'
             sty: 'width'
               
 
-          c_SliderDiv
+          c_slider_div
             kind: 'slider__handler'
             sty: 'left'
               
 
       c_br {}
       # slider2
-      c_SliderDiv
+      c_slider_div
         kind: 'slider-box'
       ,
 
-        c_SliderDiv
+        c_slider_div
           kind: 'slider'
         ,
 
-          c_SliderDiv
+          c_slider_div
             kind: 'slider__inner'
           ,
 
-            c_SliderDiv
+            c_slider_div
               kind: 'slider__track'
               sty: 'width50'
                 
 
-            c_SliderDiv
+            c_slider_div
               kind: 'slider__handler'
               sty: 'left50'
                 
 
-        c_SliderDiv
+        c_slider_div
           kind: 'slider-box__value'
         , '50'
 

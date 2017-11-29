@@ -1,8 +1,8 @@
 import { prefixDom } from 'cfx.dom'
 import page_tabbar from '../../public/page/page_div'
 import page__bd from '../../public/page/page__bd_div'
-import tabbarDiv from '../../public/navbar/navbar_div'
-import tabbarP from '../../public/tabbar/tabbar_p'
+import nabbar_div from '../../public/navbar/navbar_div'
+import tabbar_p from '../../public/tabbar/tabbar_p'
 import tabbar_div from '../../public/tabbar/tabb_div'
 import tabbar_a from '../../public/tabbar/tabbar_a'
 import tabbar_span from '../../public/tabbar/tabbar_span'
@@ -13,8 +13,8 @@ CFX = prefixDom {
     'div'
   }
   page__bd
-  tabbarP
-  tabbarDiv
+  tabbar_p
+  nabbar_div
   tabbar_div
   tabbar_a
   tabbar_span
@@ -26,8 +26,8 @@ export default ->
 
   {
     c_page__bd
-    c_tabbarP
-    c_tabbarDiv
+    c_tabbar_p
+    c_nabbar_div
     c_page_tabbar
     c_tabbar_div
     c_tabbar_a
@@ -43,14 +43,14 @@ export default ->
       kind: 'page__bd'
       sty: 'height'
       #main
-      c_tabbarDiv
+      c_nabbar_div
         kind: 'tab'
       ,
 
-        c_tabbarDiv 
+        c_nabbar_div
           kind: 'tab_panel'
 
-        c_tabbarDiv
+        c_nabbar_div
           kind: 'tabbar'
         ,
 
@@ -73,7 +73,7 @@ export default ->
                 sty: 'absoult'
               , '8'
                 
-            c_tabbarP
+            c_tabbar_p
               kind: 'tabbar__label'
             , '微信'
 
@@ -85,7 +85,7 @@ export default ->
               sty: 'img'
               alt: ''
                 
-            c_tabbarP
+            c_tabbar_p
               kind: 'tabbar__label'
             , '通讯录'
 
@@ -105,7 +105,7 @@ export default ->
                 kind: 'badge_dot'
                 sty: 'top'
 
-            c_tabbarP
+            c_tabbar_p
                 kind: 'tabbar__label'
             , '发现'
 
@@ -118,7 +118,7 @@ export default ->
               sty: 'img'
               alt: ''
 
-            c_tabbarP
+            c_tabbar_p
               kind: 'tabbar__label'
             , '我'
       

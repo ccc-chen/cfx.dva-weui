@@ -1,11 +1,11 @@
 
 import { prefixDom } from 'cfx.dom'
-import Page from '../../public/page/page_div'
-import Title_h1 from '../../public/title/title_h1'
-import Title_p from '../../public/title/title_p'
+import page from '../../public/page/page_div'
+import title_h1 from '../../public/title/title_h1'
+import title_p from '../../public/title/title_p'
 import btn from '../../public/btn/btn'
-import Page__hd from '../../public/page/page__hd_div'
-import Page__bd from '../../public/page/page__bd_div'
+import page__hd from '../../public/page/page__hd_div'
+import page__bd from '../../public/page/page__bd_div'
 import toastImg from '../../public/toast/toast_img'
 import pic from '../../../../public/assets/images/icon_footer_link.png'
 import toastDiv from '../../public/toast/toast_div'
@@ -18,48 +18,48 @@ CFX = prefixDom {
     'a'
     'img'
   }
-    Title_h1
-    Title_p
-    btn
-    Page
-    Page__hd
-    Page__bd
-    toastDiv
-    toastI
-    toastP
-    toastImg
+  title_h1
+  title_p
+  btn
+  page
+  page__hd
+  page__bd
+  toastDiv
+  toastI
+  toastP
+  toastImg
 }
 
 export default ->
 
   {
-    c_Title_h1
-    c_Title_p
+    c_title_h1
+    c_title_p
     c_btn
-    c_Page
-    c_Page__hd
-    c_Page__bd
+    c_page
+    c_page__hd
+    c_page__bd
     c_toastDiv
     c_toastI
     c_toastP
     c_toastImg
   } = CFX
 
-  c_Page
+  c_page
     kind: 'page_actionsheet'
   ,
   
-    c_Page__hd
+    c_page__hd
       kind: 'page__hd'
     ,   
-      c_Title_h1
+      c_title_h1
         kind: 'page__title'
       ,'Toast'
-      c_Title_p
+      c_title_p
         kind: 'page__desc'
       ,'弹出提示'
 
-    c_Page__bd
+    c_page__bd
       kind: 'page__bd_sp'
     ,
       c_btn

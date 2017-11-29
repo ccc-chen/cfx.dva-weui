@@ -3,8 +3,8 @@ import page_all from '../../public/page/page_div'
 import title_h1 from '../../public/title/title_h1'
 import title_p from '../../public/title/title_p'
 import list_btn from '../../public/list/list_btn'
-import ListDiv from '../../public/list/List_div'
-import BasicP from '../../public/list/list_p'
+import list_div from '../../public/list/List_div'
+import list_p from '../../public/list/list_p'
 import page__hd from '../../public/page/page__hd_div'
 import page__bd from '../../public/page/page__bd_div'
 import list_img from '../../public/img/list_img'
@@ -18,11 +18,11 @@ CFX = prefixDom {
   title_h1
   title_p
   list_btn
-  ListDiv
+  list_div
   page__hd
   page__bd
   list_a
-  BasicP
+  list_p
   list_img
 }
 
@@ -34,11 +34,11 @@ export default ->
     c_title_h1
     c_title_p
     c_list_btn
-    c_ListDiv
+    c_list_div
     c_page__hd
     c_page__bd
     c_list_a
-    c_BasicP
+    c_list_p
     c_list_img
   } = CFX
 
@@ -62,53 +62,53 @@ export default ->
       kind: 'page__bd'
     ,
       #带说明的列表项
-      c_ListDiv
+      c_list_div
         kind:'cells__title'
       , '带说明的列表项'
       
-      c_ListDiv
+      c_list_div
         kind:'cells'
       ,
-        c_ListDiv
+        c_list_div
           kind:'cell'
         ,
 
-          c_ListDiv
+          c_list_div
             kind: 'cell__bd'
           ,
-            c_BasicP
+            c_list_p
               kind: ' '
             , '标题文字'
 
-          c_ListDiv
+          c_list_div
             kind: 'cell__ft'
           , '说明文字'
 
-        c_ListDiv
+        c_list_div
           kind: 'cell_swiped'
         ,
 
-          c_ListDiv
+          c_list_div
             kind: 'cell__bd'
             sty: 'translateX'
 
-            c_ListDiv
+            c_list_div
               kind: 'cell'
             ,
 
-              c_ListDiv
+              c_list_div
                 kind: 'cell__bd'
               ,
 
-                c_BasicP
+                c_list_p
                   kind: ' '
                 , '标题文字'
 
-              c_ListDiv
+              c_list_div
                 kind: 'cell__ft'
               , '说明文字'
 
-          c_ListDiv
+          c_list_div
             kind: 'cell__ft'
           ,
 
@@ -118,18 +118,18 @@ export default ->
             , '删除'
 
       #带图标，说明列表项
-      c_ListDiv
+      c_list_div
         kind: 'cells__title'
       , '带图标、说明的列表项'
-      c_ListDiv
+      c_list_div
         kind: 'cells'
       ,
 
-        c_ListDiv
+        c_list_div
           kind: 'cell'
         ,
 
-          c_ListDiv
+          c_list_div
             kind: 'cell__hd'
           ,
 
@@ -140,23 +140,23 @@ export default ->
               sty: 'width'
 
 
-          c_ListDiv
+          c_list_div
             kind: 'cell__bd'
           ,
 
-            c_BasicP
+            c_list_p
               kind: ' '
             , '标题文字'
 
-          c_ListDiv
+          c_list_div
             kind: 'cell__ft'
           , '说明文字'
 
-        c_ListDiv
+        c_list_div
           kind: 'cell'
         ,
 
-          c_ListDiv
+          c_list_div
             kind: 'cell__hd'
           ,
 
@@ -166,22 +166,22 @@ export default ->
               alt: ''
               sty: 'width'
 
-          c_ListDiv
+          c_list_div
             kind: 'cell__bd'
           ,
 
-            c_BasicP
+            c_list_p
               kind: ' '
             , '标题文字'
 
-          c_ListDiv
+          c_list_div
             kind: 'cell__ft'
           , '说明文字'
       # 带跳转的列表项
-      c_ListDiv
+      c_list_div
         kind: 'cells__title'
       , '带跳转的列表项'
-      c_ListDiv
+      c_list_div
         kind: 'cells'
       ,
 
@@ -189,36 +189,36 @@ export default ->
           kind: 'cell_access'
         ,
 
-          c_ListDiv
+          c_list_div
             kind: 'cell__bd'
           ,
 
-            c_BasicP
+            c_list_p
               kind: ' '
             , 'cell standard'
 
-          c_ListDiv
+          c_list_div
             kind: 'cell__ft'
 
         c_list_a
           kind: 'cell_access'
         ,
 
-          c_ListDiv
+          c_list_div
             kind: 'cell__bd'
           ,
 
-            c_BasicP
+            c_list_p
               kind: ' '
             , 'cell standard'
 
-          c_ListDiv
+          c_list_div
             kind: 'cell__ft'
       # 带说明、跳转的列表项
-      c_ListDiv
+      c_list_div
         kind: 'cells__title'
       , '带说明、跳转的列表项'
-      c_ListDiv
+      c_list_div
         kind: 'cells'
       ,
 
@@ -227,15 +227,15 @@ export default ->
           kind: 'cell_access'
         ,
 
-          c_ListDiv
+          c_list_div
             kind: 'cell__bd'
           ,
 
-            c_BasicP
+            c_list_p
               kind: ' '
             , 'cell standard'
 
-          c_ListDiv
+          c_list_div
             kind: 'cell__ft'
           , '说明文字'
 
@@ -244,22 +244,22 @@ export default ->
           kind: 'cell_access'
         ,
 
-          c_ListDiv
+          c_list_div
             kind: 'cell__bd'
 
-            c_BasicP
+            c_list_p
               kind: ' '
             , 'cell standard'
 
-          c_ListDiv
+          c_list_div
             kind: 'cell__ft'
           , '说明文字'
       # 带图标、说明、跳转的列表项
-      c_ListDiv
+      c_list_div
         kind: 'cells__title'
       , '带图标、说明、跳转的列表项'
       
-      c_ListDiv
+      c_list_div
         kind: 'cells'
       ,
 
@@ -268,7 +268,7 @@ export default ->
           kind: 'cell_access'
         ,
 
-          c_ListDiv
+          c_list_div
             kind: 'cell__hd'
           ,
 
@@ -277,15 +277,15 @@ export default ->
               alt: ''
               sty: 'width'
 
-          c_ListDiv
+          c_list_div
             kind: 'cell__bd'
           ,
 
-            c_BasicP
+            c_list_p
               kind: ' '
             , 'cell standard'
 
-          c_ListDiv
+          c_list_div
             kind: 'cell__ft'
           , '说明文字'
 
@@ -294,7 +294,7 @@ export default ->
           kind: 'cell_access'
         ,
 
-          c_ListDiv
+          c_list_div
             kind: 'cell__hd'
           ,
 
@@ -303,14 +303,14 @@ export default ->
               alt: ''
               sty: 'width'
 
-          c_ListDiv
+          c_list_div
             kind: 'cell__bd'
           ,
 
-            c_BasicP
+            c_list_p
               kind: ' '
             , 'cell standard'
 
-          c_ListDiv
+          c_list_div
             kind: 'cell__ft'
           , '说明文字'

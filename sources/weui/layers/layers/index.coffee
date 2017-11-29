@@ -4,7 +4,7 @@ import page__hd from '../../public/page/page__hd_div'
 import title_h1 from '../../public/title/title_h1'
 import title_p from '../../public/title/title_p'
 import page__bd from '../../public/page/page__bd_div'
-import LayerDiv from '../../public/layer/layer_div'
+import layer_div from '../../public/layer/layer_div'
 import layer_h2 from '../../public/layer/layer_h2'
 import layer_p from '../../public/layer/layer_p'
 import layer_span from '../../public/layer/layer_span'
@@ -14,7 +14,7 @@ CFX = prefixDom {
     'div'
   }
   page__hd
-  LayerDiv
+  layer_div
   layer_h2
   layer_p
   layer_span
@@ -29,7 +29,7 @@ export default ->
   {
     c_div
     c_page__bd
-    c_LayerDiv
+    c_layer_div
     c_page_button
     c_page__hd
     c_title_h1
@@ -58,10 +58,10 @@ export default ->
       kind: 'page__bd'
     ,
 
-      c_LayerDiv
+      c_layer_div
         datafor:'popout'
-        style:
-          display:'none'
+        sty: 'display'
+          
         kind: 'j_page_info'
       ,
         c_layer_h2
@@ -72,10 +72,9 @@ export default ->
           kind: 'desc'
         , '弹出层,作为内容层和导航层的补充'
 
-      c_LayerDiv
+      c_layer_div
         datafor:'popout'
-        style:
-            display:'none'
+        sty: 'display'
         kind: 'j_page_info'
       ,
         c_layer_h2
@@ -86,10 +85,9 @@ export default ->
           kind: 'desc'
         , '蒙层，配合Popout层使用，用于锁定内容层和导航层操作，不单独使用。'
 
-      c_LayerDiv
+      c_layer_div
         datafor:'popout'
-        style:
-            display:'none'
+        sty: 'display'
         key: 'info3'
         kind: 'j_page_info'
       ,
@@ -101,10 +99,9 @@ export default ->
           kind: 'desc'
         , '导航层，位于内容层之上，在用户滑动内容层时可保持位置不动，通常用于承载导航栏等需要固定在页面的元素。'
 
-      c_LayerDiv
+      c_layer_div
         datafor:'popout'
-        style:
-            display:'none'
+        sty: 'display'
         kind: 'j_page_info'
       ,
         c_layer_h2
@@ -116,10 +113,10 @@ export default ->
         , '内容层，承载页面主要内容'
       
 
-      c_LayerDiv
+      c_layer_div
         kind: 'layers'
       ,
-        c_LayerDiv
+        c_layer_div
           kind: 'popout'
           dataname: 'popout'
         ,
@@ -127,7 +124,7 @@ export default ->
             kind: ' '
           , 'Popout'
           
-        c_LayerDiv
+        c_layer_div
           kind: 'popout'
           dataname: 'mask'
         ,
@@ -135,7 +132,7 @@ export default ->
             kind: ' '
           , 'Mask'
 
-        c_LayerDiv
+        c_layer_div
           kind: 'popout'
           dataname: 'navigation'
         ,
@@ -143,7 +140,7 @@ export default ->
             kind: ' '
           , 'Navigation' 
           
-        c_LayerDiv
+        c_layer_div
           kind: 'popout'
           dataname: 'content'
         ,

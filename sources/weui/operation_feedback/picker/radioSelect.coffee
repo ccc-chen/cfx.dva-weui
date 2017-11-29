@@ -1,11 +1,11 @@
 
 import { prefixDom } from 'cfx.dom'
-import Page from '../../public/page/page_div'
-import Title_h1 from '../../public/title/title_h1'
-import Title_p from '../../public/title/title_p'
+import page from '../../public/page/page_div'
+import title_h1 from '../../public/title/title_h1'
+import title_p from '../../public/title/title_p'
 import btn from '../../public/btn/btn'
-import Page__hd from '../../public/page/page__hd_div'
-import Page__bd from '../../public/page/page__bd_div'
+import page__hd from '../../public/page/page__hd_div'
+import page__bd from '../../public/page/page__bd_div'
 import picker_a from '../../public/picker/picker_a'
 import picker_div from '../../public/picker/picker_div'
 
@@ -13,107 +13,106 @@ CFX = prefixDom {
   default: {
    
   }
-    Title_h1
-    Title_p
-    btn
-    Page
-    Page__hd
-    Page__bd
-    picker_a
-    picker_div
+  title_h1
+  title_p
+  btn
+  page
+  page__hd
+  page__bd
+  picker_a
+  picker_div
 }
 
 export default ->
 
-    {
-      c_a
-      c_div
-      c_Title_h1
-      c_Title_p
-      c_btn
-      c_Page
-      c_Page__hd
-      c_Page__bd
-      c_picker_a
-      c_picker_div
-    } = CFX
+  {
+    c_a
+    c_div
+    c_title_h1
+    c_title_p
+    c_btn
+    c_page
+    c_page__hd
+    c_page__bd
+    c_picker_a
+    c_picker_div
+  } = CFX
 
-    c_Page
-      kind: 'page_actionsheet'
+  c_page
+    kind: 'page_actionsheet'
+  ,
+  
+    c_page__hd
+      kind: 'page__hd'
+    ,    
+      c_title_h1
+        kind: 'page__title'
+      , 'Picker'
+      c_title_p
+        kind: 'page__desc'
+      , '多列选择器，需要配合js实现'
+      
+    c_page__bd
+      kind: 'page__bd_sp'
     ,
-    
-      c_Page__hd
-        kind: 'page__hd'
-      ,    
-        c_Title_h1
-          kind: 'page__title'
-        , 'Picker'
-        c_Title_p
-          kind: 'page__desc'
-        , '多列选择器，需要配合js实现'
-        
+      c_btn
+        kind:'btn_default'
+      , '单列选择器'
 
-      c_Page__bd
-        kind: 'page__bd_sp'
+      c_btn
+        kind:'btn_default'
+      , '日期选择器'
+
+      c_picker_div {}
       ,
-        c_btn
-          kind:'btn_default'
-        , '单列选择器'
+        c_picker_div
+          kind: 'mask_animate-fade-in'
 
-        c_btn
-          kind:'btn_default'
-        , '日期选择器'
-
-        c_picker_div {}
+        c_picker_div
+          kind: 'picker_animate-slider-up'
         ,
           c_picker_div
-            kind: 'mask_animate-fade-in'
+            kind: 'picker__hd'
+          ,
+            c_picker_a
+              dataaction: 'cancel'
+              kind: 'picker__action'
+              href: 'javascript:;'
+            , '取消'
+
+            c_picker_a
+              dataaction: 'select'
+              kind: 'picker__action'
+              href: 'javascript:;'
+              id: 'weui-picker-confirm'
+            , '确定'
 
           c_picker_div
-            kind: 'picker_animate-slider-up'
+            kind: 'picker__bd'
           ,
             c_picker_div
-              kind: 'picker__hd'
-            ,
-              c_picker_a
-                dataaction: 'cancel'
-                kind: 'picker__action'
-                href: 'javascript:;'
-              , '取消'
-
-              c_picker_a
-                dataaction: 'select'
-                kind: 'picker__action'
-                href: 'javascript:;'
-                id: 'weui-picker-confirm'
-              , '确定'
-
-            c_picker_div
-              kind: 'picker__bd'
+              kind: 'picker__group'
             ,
               c_picker_div
-                kind: 'picker__group'
-              ,
+                kind: 'picker__mask'
+              c_picker_div
+                kind: 'picker__indicator'
+              c_picker_div
+                kind: 'picker__content'
+                sty:'transform'
                 c_picker_div
-                  kind: 'picker__mask'
+                  kind: 'picker__item'
+                , '飞机票'
                 c_picker_div
-                  kind: 'picker__indicator'
+                  kind: 'picker__item'
+                , '的士票'
                 c_picker_div
-                  kind: 'picker__content'
-                  sty:'transform'
-                  c_picker_div
-                    kind: 'picker__item'
-                  , '飞机票'
-                  c_picker_div
-                    kind: 'picker__item'
-                  , '的士票'
-                  c_picker_div
-                    kind: 'picker__item'
-                  , '火车票'
-                  c_picker_div
-                    kind: 'picker__item_disabled'
-                  , '公交票'
-                  c_picker_div
-                    kind: 'picker__item'
-                  , '其他'
-              
+                  kind: 'picker__item'
+                , '火车票'
+                c_picker_div
+                  kind: 'picker__item_disabled'
+                , '公交票'
+                c_picker_div
+                  kind: 'picker__item'
+                , '其他'
+            
