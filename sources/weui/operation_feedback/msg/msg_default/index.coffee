@@ -1,80 +1,85 @@
+import { prefixDom } from 'cfx.dom'
+import page from '../../../public/page/page_div'
+import msg_div from '../../../public/msg/msg_div'
+import msg_i from '../../../public/msg/msg_i'
+import msg_p from '../../../public/msg/msg_p'
+import msg_a from '../../../public/msg/msg_a'
+import btn from '../../../public/btn/btn'
+import msg_h2 from '../../../public/msg/msg_h2'
+CFX = prefixDom {
+  default: {
+    'div'
+    'a'
+    'h2'
+    'p'
+    'i'
+  }
+  page
+  msg_div
+  msg_i
+  msg_p
+  msg_a
+  btn
+  msg_h2
+}
 
-# import { prefixDom } from 'cfx.dom'
-# CFX = prefixDom {
-#   default: {
-#     'div'
-#     'a'
-#     'h2'
-#     'p'
-#     'i'
-#   }
-    
-# }
+export default ->
 
-# export default ->
+  {
+    c_div
+    c_a
+    c_p
+    c_h2
+    c_i
+    c_page
+    c_msg_div
+    c_msg_i
+    c_msg_p
+    c_msg_a
+    c_btn
+    c_msg_h2
+  } = CFX
 
+  c_page
+    kind: 'page_msg_warn'
+  ,
+    c_msg_div
+      kind: 'msg'
+    ,
+      c_msg_div
+        kind: 'msg__icon-area'
+      ,
+        c_msg_i
+          kind: 'msg_warn'
+      c_msg_div
+        kind: 'msg__text-area'
+      ,
+        c_msg_h2
+          kind: 'msg__title'
+        , '操作失败'
 
-#     {
-#       c_div
-#       c_a
-#       c_p
-#       c_h2
-#       c_i
-#     } = CFX
+        c_msg_p
+          kind: 'msg__desc'
+        , '内容详情，可根据实际需要安排，如果换行则不超过规定长度，居中展现'
+        ,
 
-#     c_div
-#       className: [
-#         'page'
-#         'js_show'
-#         'msg_warn'
-#       ].join ' '
-#     ,
-#       c_div
-#         className: 'weui-msg'
-#       ,
-#         c_div
-#           className: 'weui-msg__icon-area'
-#         ,
-#           c_i
-#             className: [
-#               'weui-icon-warn'
-#               'weui-icon_msg'
-#             ].join ' '
-#         c_div
-#           className: 'weui-msg__text-area'
-#         ,
-#           c_h2
-#             className: 'weui-msg__title'
-#           , '操作失败'
-#           c_p
-#             className: 'weui-msg__desc'
-#           , '内容详情，可根据实际需要安排，如果换行则不超过规定长度，居中展现'
-#             c_a
-#               href: 'javascript:void(0)'
-#             , '文字链接'
-#         c_div
-#           className: 'weui-msg__opr-area'
-#         ,
-#           c_p
-#             className: 'weui-btn-area'
-#           ,
-#             c_a 
-#               className:[
-#                 'weui-btn'
-#                 'weui-btn_primary'
-#               ].join ' '
-#               href: 'javascript:history.back()'
-#             , '推荐操作'
-#             c_a 
-#               className:[
-#                 'weui-btn'
-#                 'weui-btn_default'
-#               ].join ' '
-#               href: 'javascript:history.back()'
-#             , '辅助操作'
-      
-        
+          c_msg_a
+            href: 'javascript:void(0)'
+          , '文字链接'
 
-
-
-
+      c_msg_div
+        kind: 'msg__opr-area'
+      ,
+        c_msg_p
+          kind: 'btn-area'
+        ,
+          c_btn 
+            kind: 'primary'
+            state: 'normal'
+            href: 'javascript:history.back()'
+          , '推荐操作'
+          c_btn 
+            kind: 'default'
+            state: 'normal'
+            href: 'javascript:history.back()'
+          , '辅助操作'

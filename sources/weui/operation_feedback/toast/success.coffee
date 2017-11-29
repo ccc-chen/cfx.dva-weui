@@ -70,9 +70,31 @@ export default ->
         kind:'btn_default'
       , '加载中提示'
     
+    c_Page
+      kind: 'page__ft'
+    ,
+      c_btn
+        kind: ' '
+      ,
+        c_toastImg
+          kind: ' '
+          src: pic
+    
+    c_toastDiv
+      id: 'toast'
+    ,
+      c_toastDiv
+        kind: 'mask_transparent'
+      c_toastDiv
+        kind: 'toast'
+        c_toastI
+          kind: 'toast_success'
+
+        c_toastP
+          kind: 'toast__content'
+        , '已完成'
     
     
-   
       
       
 

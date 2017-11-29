@@ -72,6 +72,29 @@ export default ->
           kind: 'btn_default'
         , 'Android Dialog样式二'
 
+      c_Page
+        kind: 'page__ft'
+      ,
+              
+        #hide box2
+        c_dialogDiv
+          kind: 'js_dialog'
+        ,
+          c_dialogDiv
+            kind: 'mask'
+
+          c_dialogDiv
+            kind: 'dialog'
+          ,
+            c_dialogDiv
+              kind: 'dialog__bd'
+            ,'弹窗内容，告知当前状态、信息和解决方法，描述文字尽量控制在三行内'
+            c_dialogDiv
+              kind: 'dialog__ft'
+            ,
+              c_btn
+                kind: 'dialog_btn_primary'
+              , '知道了'
 
 
 

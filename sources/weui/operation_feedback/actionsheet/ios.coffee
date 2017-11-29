@@ -65,5 +65,45 @@ export default ->
           kind: 'btn_default'
         , 'Android ActionSheet'
 
+        #ios
+        c_actionsheetDiv
+          kind: ' '
+        ,
+          c_actionsheetDiv
+            kind: 'mask'
+
+          c_actionsheetDiv
+            kind: 'actionsheet_toggle'
+
+            c_actionsheetDiv
+              kind: 'actionsheet-title'
+            ,
+              c_actionsheetP
+                kind: 'actionsheet__title_text'
+              , '这是一个标题，可以为一行或者两行。'
+
+            c_actionsheetDiv
+              kind: 'actionsheet_menu'
+              c_actionsheetDiv
+                kind: 'actionsheet_cell'
+              , '示例菜单'
+              c_actionsheetDiv
+                kind: 'actionsheet_cell'
+              , '示例菜单'
+              c_actionsheetDiv
+                kind: 'actionsheet_cell'
+              , '示例菜单'
+              c_actionsheetDiv
+                kind: 'actionsheet_cell'
+              , '示例菜单'
+            
+            c_actionsheetDiv
+              kind: 'actionsheet_action'
+            ,
+              c_actionsheetDiv
+                kind: 'actionsheet_cell'
+              , '取消'
+    
+
 
   

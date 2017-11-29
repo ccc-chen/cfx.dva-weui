@@ -72,6 +72,40 @@ export default ->
           kind: 'btn_default'
         , 'Android Dialog样式二'
 
+      c_Page
+        kind: 'page__ft'
+      ,
+        #hide box3
+        c_dialogDiv
+          kind: 'js_dialog'
+          style:
+            opacity: '1'
+        ,
+          c_dialogDiv
+            kind: 'mask'
 
+          c_dialogDiv
+            kind: 'dialog_skin_android'
+          ,
+            c_dialogDiv
+              kind: 'dialog__hd'
+            ,
+              c_dialogStrong
+                kind: 'dialog__title'
+              , '弹窗标题'
+            
+            c_dialogDiv
+              kind: 'dialog__bd'
+            , '弹窗内容，告知当前状态、信息和解决方法，描述文字尽量控制在三行内'            
+            c_dialogDiv
+              kind: 'dialog__ft'
+            ,
+              c_btn
+                kind: 'dialog_btn_default'
+              , '辅助操作'
+              c_btn
+                kind: 'dialog_btn_primary'
+              , '主操作'
+        
 
 

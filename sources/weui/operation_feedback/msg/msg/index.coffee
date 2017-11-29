@@ -64,8 +64,25 @@ export default ->
 
       c_Page
         kind: 'page__ft'
+
+
       
         
+
+
+
+
+
+      
+        
+
+
+
+      
+        
+
+
+
 
 
 

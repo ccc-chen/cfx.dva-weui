@@ -30,6 +30,7 @@ export default ->
 
 
     {
+      c_div
       c_Title_h1
       c_Title_p
       c_Page__hd
@@ -63,7 +64,29 @@ export default ->
         
         c_btn
           kind: 'btn_default'
-        , 'Android ActionSheet'
+        , 'Android ActionSheet'    
+        #android 
+        c_actionsheetDiv
+          kind:'skin_android'
+          sty: 'opacity'
+        ,
+          c_actionsheetDiv
+            kind: 'mask'
+
+          c_actionsheetDiv
+            kind: 'actionsheet'
+          ,
+            c_actionsheetDiv
+              kind:'actionsheet_menu'
+              c_actionsheetDiv
+                kind: 'actionsheet_cell'
+              , '示例菜单'             
+              c_actionsheetDiv
+                kind: 'actionsheet_cell'
+              , '示例菜单'             
+              c_actionsheetDiv
+                kind: 'actionsheet_cell'
+              , '示例菜单'
 
 
   
