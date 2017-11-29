@@ -62,13 +62,13 @@ export default ->
 
           c_SliderDiv
             kind: 'slider__track'
-            style:
-              width: '0'
+            sty: 'width'
+              
 
           c_SliderDiv
             kind: 'slider__handler'
-            style:
-              left: '0'
+            sty: 'left'
+              
 
       c_br {}
       # slider2
@@ -86,13 +86,13 @@ export default ->
 
             c_SliderDiv
               kind: 'slider__track'
-              style:
-                width: '50%'
+              sty: 'width50'
+                
 
             c_SliderDiv
               kind: 'slider__handler'
-              style:
-                left: '50%'
+              sty: 'left50'
+                
 
         c_SliderDiv
           kind: 'slider-box__value'

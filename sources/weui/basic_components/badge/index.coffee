@@ -13,7 +13,7 @@ import cell__ft from '../../public/cells/cell__ft'
 import label_span from '../../public/badge/label_span'
 import badge_dot from '../../public/badge/badge'
 import cell__hd from '../../public/cells/cell__hd'
-import img_pic_160 from '../../public/img/img_pic_160'
+import badge_img from '../../public/img/badge_img'
 import badge_span from '../../public/badge/badge_span'
 import badge_p from '../../public/badge/badge_p'
 
@@ -35,7 +35,7 @@ CFX = prefixDom {
   label_span
   badge_dot
   cell__hd
-  img_pic_160
+  badge_img
   badge_span
   badge_p
 }
@@ -58,7 +58,7 @@ export default ->
     c_label_span
     c_badge_dot
     c_cell__hd
-    c_img_pic_160
+    c_badge_img
     c_badge_span
     c_badge_p
   } = CFX
@@ -131,7 +131,7 @@ export default ->
             sty: 'position'
           ,
 
-            c_img_pic_160
+            c_badge_img
               kind: 'pic_160'
               sty: 'width'
 

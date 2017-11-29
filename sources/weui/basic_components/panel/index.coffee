@@ -9,7 +9,7 @@ import panel_hd from '../../public/panel/panel__hd_div'
 import panel_bd from '../../public/panel/panel_bd_div'
 import media_appmsg from '../../public/panel/media_appmsg_a'
 import media_hd from '../../public/panel/media_hd_div'
-import media_img from '../../public/panel/media_img'
+import media_img from '../../public/img/media_img'
 import media_bd from '../../public/panel/media_bd'
 import media_h4 from '../../public/panel/media_h4'
 import media_p from '../../public/panel/media_p'
@@ -24,7 +24,7 @@ import cells_div from '../../public/cells/cells_div'
 import panel_div from '../../public/panel/panel_div'
 import cell_access_a from '../../public/panel/cell_access_a'
 import cell_hd from '../../public/panel/cell_hd_div'
-import img_img from '../../public/panel/img_img'
+import panel_img from '../../public/img/panel_img'
 import cell_primary from '../../public/panel/cell_bd_primary_div'
 import panel_p from '../../public/panel/panel_p'
 import label_ul from '../../public/panel/media_ul'
@@ -60,7 +60,7 @@ CFX = prefixDom {
   panel_div
   cell_access_a
   cell_hd
-  img_img
+  panel_img
   cell_primary
   panel_p
   label_ul
@@ -96,7 +96,7 @@ export default ->
     c_panel_div
     c_cell_access_a
     c_cell_hd
-    c_img_img
+    c_panel_img
     c_cell_primary
     c_panel_p
     c_label_ul
@@ -277,7 +277,7 @@ export default ->
                   kind: 'cell__hd'
                 ,
 
-                  c_img_img
+                  c_panel_img
                     kind: 'width'
                     sty: 'img'
 
@@ -300,7 +300,7 @@ export default ->
                   kind: 'cell__hd'
                 ,
                   
-                  c_img_img
+                  c_panel_img
                     kind: 'width'
                     sty: 'img'
 

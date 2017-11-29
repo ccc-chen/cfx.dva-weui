@@ -6,7 +6,7 @@ import title_p from '../../public/title/title_p'
 import grids_div from '../../public/grids/grids_div'
 import grid_a from '../../public/grids/grid_a'
 import grid__icon_div from '../../public/grids/grid__icon_div'
-import grid_img from '../../public/grids/grid_img'
+import grid_img from '../../public/img/grid_img'
 import grid__label_p from '../../public/grids/grid__label_p'
 
 CFX = prefixDom {

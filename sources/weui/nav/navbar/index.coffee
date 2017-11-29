@@ -27,8 +27,8 @@ export default ->
   
     c_page__bd
       kind: 'page__bd'
-      style:
-        height:'100%'
+      sty: 'height'
+        
     ,
 
       c_navbarDiv

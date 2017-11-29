@@ -5,8 +5,6 @@ import page__hd from '../../public/page/page__hd_div'
 import title_h1 from '../../public/title/title_h1'
 import title_p from '../../public/title/title_p'
 import page__bd from '../../public/page/page__bd_div'
-
-
 import UploaderDiv from '../../public/uploader/uploader_div'
 import uploader_a from '../../public/uploader/uploader_a'
 import uploader_span from '../../public/uploader/uploader_span'
@@ -166,7 +164,8 @@ export default ->
 
                   c_Uploader
                     kind: 'uploader__file_status'
-                    style: backgroundImage: "url(#{pic})"
+                    style: 
+                      backgroundImage: "url(#{pic})"
                   ,
 
                     c_UploaderDiv

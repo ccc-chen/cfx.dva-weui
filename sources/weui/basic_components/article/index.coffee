@@ -10,7 +10,7 @@ import article_h3 from '../../public/article/article_h3'
 import article_article from '../../public/article/article_article'
 import article_section from '../../public/article/article_section'
 import article_p from '../../public/article/article_p'
-import img_img from '../../public/img/img_img'
+import article_img from '../../public/img/article_img'
 import article_span from '../../public/article/article_span'
 
 CFX = prefixDom {
@@ -28,7 +28,7 @@ CFX = prefixDom {
   article_article
   article_section
   article_p
-  img_img
+  article_img
   article_span
 }
 
@@ -47,7 +47,7 @@ export default ->
     c_article_article
     c_article_section
     c_article_p
-    c_img_img
+    c_article_img
     c_article_span
   } = CFX
 
@@ -105,13 +105,13 @@ export default ->
               kind: ' '
             ,
 
-              c_img_img
+              c_article_img
                 kind: 'pic_article'
 
               c_article_span
                 kind: ' '
 
-              c_img_img
+              c_article_img
                 kind: 'pic_article'
 
           c_article_section

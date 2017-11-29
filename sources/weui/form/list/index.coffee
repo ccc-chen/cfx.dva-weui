@@ -7,7 +7,7 @@ import ListDiv from '../../public/list/List_div'
 import BasicP from '../../public/list/list_p'
 import page__hd from '../../public/page/page__hd_div'
 import page__bd from '../../public/page/page__bd_div'
-import BasicImg from '../../public/basicElements/img'
+import list_img from '../../public/img/list_img'
 import list_a from '../../public/list/list_a'
 
 CFX = prefixDom {
@@ -23,7 +23,7 @@ CFX = prefixDom {
   page__bd
   list_a
   BasicP
-  BasicImg
+  list_img
 }
 
 export default ->
@@ -39,7 +39,7 @@ export default ->
     c_page__bd
     c_list_a
     c_BasicP
-    c_BasicImg
+    c_list_img
   } = CFX
 
   c_page_all
@@ -90,8 +90,7 @@ export default ->
 
           c_ListDiv
             kind: 'cell__bd'
-            style:
-              transform: 'translateX(-68px)'
+            sty: 'translateX'
 
             c_ListDiv
               kind: 'cell'
@@ -134,14 +133,12 @@ export default ->
             kind: 'cell__hd'
           ,
 
-            c_BasicImg
+            c_list_img
               kind: ' '
               src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAMAAABgZ9sFAAAAVFBMVEXx8fHMzMzr6+vn5+fv7+/t7e3d3d2+vr7W1tbHx8eysrKdnZ3p6enk5OTR0dG7u7u3t7ejo6PY2Njh4eHf39/T09PExMSvr6+goKCqqqqnp6e4uLgcLY/OAAAAnklEQVRIx+3RSRLDIAxE0QYhAbGZPNu5/z0zrXHiqiz5W72FqhqtVuuXAl3iOV7iPV/iSsAqZa9BS7YOmMXnNNX4TWGxRMn3R6SxRNgy0bzXOW8EBO8SAClsPdB3psqlvG+Lw7ONXg/pTld52BjgSSkA3PV2OOemjIDcZQWgVvONw60q7sIpR38EnHPSMDQ4MjDjLPozhAkGrVbr/z0ANjAF4AcbXmYAAAAASUVORK5CYII='
               alt: ''
-              style:
-                width: '20px'
-                marginRight: '5px'
-                display: 'block'
+              sty: 'width'
+
 
           c_ListDiv
             kind: 'cell__bd'
@@ -163,14 +160,11 @@ export default ->
             kind: 'cell__hd'
           ,
 
-            c_BasicImg
+            c_list_img
               key: 'img2'
               src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAMAAABgZ9sFAAAAVFBMVEXx8fHMzMzr6+vn5+fv7+/t7e3d3d2+vr7W1tbHx8eysrKdnZ3p6enk5OTR0dG7u7u3t7ejo6PY2Njh4eHf39/T09PExMSvr6+goKCqqqqnp6e4uLgcLY/OAAAAnklEQVRIx+3RSRLDIAxE0QYhAbGZPNu5/z0zrXHiqiz5W72FqhqtVuuXAl3iOV7iPV/iSsAqZa9BS7YOmMXnNNX4TWGxRMn3R6SxRNgy0bzXOW8EBO8SAClsPdB3psqlvG+Lw7ONXg/pTld52BjgSSkA3PV2OOemjIDcZQWgVvONw60q7sIpR38EnHPSMDQ4MjDjLPozhAkGrVbr/z0ANjAF4AcbXmYAAAAASUVORK5CYII='
               alt: ''
-              style:
-                width: '20px'
-                marginRight: '5px'
-                display: 'block'
+              sty: 'width'
 
           c_ListDiv
             kind: 'cell__bd'
@@ -278,13 +272,10 @@ export default ->
             kind: 'cell__hd'
           ,
 
-            c_BasicImg
+            c_list_img
               src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAMAAABgZ9sFAAAAVFBMVEXx8fHMzMzr6+vn5+fv7+/t7e3d3d2+vr7W1tbHx8eysrKdnZ3p6enk5OTR0dG7u7u3t7ejo6PY2Njh4eHf39/T09PExMSvr6+goKCqqqqnp6e4uLgcLY/OAAAAnklEQVRIx+3RSRLDIAxE0QYhAbGZPNu5/z0zrXHiqiz5W72FqhqtVuuXAl3iOV7iPV/iSsAqZa9BS7YOmMXnNNX4TWGxRMn3R6SxRNgy0bzXOW8EBO8SAClsPdB3psqlvG+Lw7ONXg/pTld52BjgSSkA3PV2OOemjIDcZQWgVvONw60q7sIpR38EnHPSMDQ4MjDjLPozhAkGrVbr/z0ANjAF4AcbXmYAAAAASUVORK5CYII='
               alt: ''
-              style:
-                width: '20px'
-                marginRight: '5px'
-                display: 'block'
+              sty: 'width'
 
           c_ListDiv
             kind: 'cell__bd'
@@ -307,14 +298,10 @@ export default ->
             kind: 'cell__hd'
           ,
 
-            c_BasicImg
-              key: 'weui-img2s'
+            c_list_img
               src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAMAAABgZ9sFAAAAVFBMVEXx8fHMzMzr6+vn5+fv7+/t7e3d3d2+vr7W1tbHx8eysrKdnZ3p6enk5OTR0dG7u7u3t7ejo6PY2Njh4eHf39/T09PExMSvr6+goKCqqqqnp6e4uLgcLY/OAAAAnklEQVRIx+3RSRLDIAxE0QYhAbGZPNu5/z0zrXHiqiz5W72FqhqtVuuXAl3iOV7iPV/iSsAqZa9BS7YOmMXnNNX4TWGxRMn3R6SxRNgy0bzXOW8EBO8SAClsPdB3psqlvG+Lw7ONXg/pTld52BjgSSkA3PV2OOemjIDcZQWgVvONw60q7sIpR38EnHPSMDQ4MjDjLPozhAkGrVbr/z0ANjAF4AcbXmYAAAAASUVORK5CYII='
               alt: ''
-              style:
-                width: '20px'
-                marginRight: '5px'
-                display: 'block'
+              sty: 'width'
 
           c_ListDiv
             kind: 'cell__bd'

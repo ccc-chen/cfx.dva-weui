@@ -1,17 +1,12 @@
 import { prefixDom } from 'cfx.dom'
-import pic from '../../../../public/assets/images/icon_tabbar.png'
 import page_tabbar from '../../public/page/page_div'
-
 import page__bd from '../../public/page/page__bd_div'
-
 import tabbarDiv from '../../public/navbar/navbar_div'
 import tabbarP from '../../public/tabbar/tabbar_p'
-
 import tabbar_div from '../../public/tabbar/tabb_div'
 import tabbar_a from '../../public/tabbar/tabbar_a'
 import tabbar_span from '../../public/tabbar/tabbar_span'
-import tabbar_img from '../../public/tabbar/tabbar_img'
-
+import tabbar_img from '../../public/img/tabbar_img'
 
 CFX = prefixDom {
   default: {
@@ -65,22 +60,17 @@ export default ->
 
             c_tabbar_span
               kind: ' '
-              style:
-                display: 'inline-block'
-                position: 'relative'
+              sty: 'inline'
             ,		
 
               c_tabbar_img
                 kind: 'tabbar__icon'
-                src: pic
+                sty: 'img'
                 alt: ""
 
               c_tabbar_span
                 kind: 'badge'
-                style: 
-                  position: 'absolute'
-                  top: '-2px'
-                  right: '-13px'
+                sty: 'absoult'
               , '8'
                 
             c_tabbarP
@@ -92,7 +82,7 @@ export default ->
           ,
             c_tabbar_img
               kind: 'tabbar__icon'
-              src: pic
+              sty: 'img'
               alt: ''
                 
             c_tabbarP
@@ -104,21 +94,16 @@ export default ->
           ,
             c_tabbar_span
               kind: ' '
-              style: 
-                display: 'inline-block'
-                position: 'relative'
+              sty: 'inline'
             ,    
               c_tabbar_img
                 kind: 'tabbar__icon'
-                src: pic
+                sty: 'img'
                 alt: ''
 
               c_tabbar_span
                 kind: 'badge_dot'
-                style:
-                  position: 'absolute'
-                  top: '0'
-                  right: '-6px'
+                sty: 'top'
 
             c_tabbarP
                 kind: 'tabbar__label'
@@ -130,7 +115,7 @@ export default ->
 
             c_tabbar_img
               kind: 'tabbar__icon'
-              src: pic
+              sty: 'img'
               alt: ''
 
             c_tabbarP

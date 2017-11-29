@@ -1,5 +1,4 @@
 import { prefixDom } from 'cfx.dom'
-import vcode from '../../../../public/assets/images/vcode.jpg'
 import Page from '../../public/page/page_div'
 import Title_h1 from '../../public/title/title_h1'
 import Title_p from '../../public/title/title_p'
@@ -14,7 +13,7 @@ import Input_select from '../../public/input/Input_select'
 import Input_option from '../../public/input/Input_option'
 import Btn from '../../public/btn/btn'
 import Input_btn from '../../public/input/Input_button'
-import Input_img from '../../public/input/Input_img'
+import Input_img from '../../public/img/Input_img'
 import Input_textarea from '../../public/input/Input_textarea'
 import Page_hd from '../../public/page/page__hd_div'
 import Page_bd from '../../public/page/page__bd_div'
@@ -344,9 +343,8 @@ export default ->
 
             c_Input_img
               kind: 'vcode_img'
-              src: vcode
+              sty: 'img'
 
-      
       #warn
       c_Input_div
         kind: 'cells__tips'
