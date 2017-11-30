@@ -7,7 +7,7 @@ import gallery_div from '../../public/gallery/gallery_div'
 import gallery__opr_div from '../../public/gallery/gallery__opr_div'
 import gallery__del_a from '../../public/gallery/gallery__del_a'
 import gallery__img from '../../public/img/img_pic_article'
-import gallery_delete from '../../public/gallery/gallery-delete'
+import gallery_delete from '../../public/gallery/gallery_delete'
 
 CFX = prefixDom {
   default: {
