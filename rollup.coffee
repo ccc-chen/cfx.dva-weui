@@ -11,6 +11,14 @@ export default
     file: './dist/bundle.js'
     format: 'cjs'
   plugins: [
+    replace
+      patterns: [
+        transform: (code, id) ->
+          pattern = /\.\.\/\.\.\/\.\.\/\.\.\/public\/assets\/images\/pic_160\.png/
+          if pattern.test code
+            code = code.replace pattern, '../../../assets/images/pic_160.png'
+          code         
+      ]    
     # replace
     #   patterns: [
     #     transform: (code, id) ->
