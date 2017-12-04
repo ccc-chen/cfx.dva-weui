@@ -18,7 +18,8 @@ class Cells extends React.Component
     {
       title = '' # weui-cells__title
       tips = '' # weui-cells__tips
-      cellsType = '' ### all of input
+      cellsType = ''
+      ### all of input
         radio: weui-cells_radio
         checkbox: weui-cells_checkbox
         form: weui-cells_form
@@ -48,7 +49,7 @@ class Cells extends React.Component
             ]
             else []
           )...
-        ]
+        ].join ' '
         cells... # []
       ]
 

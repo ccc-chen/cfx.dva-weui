@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 
 CFX = prefixDom {
   'div'
+  'label'
   'a'
 }
 
@@ -12,6 +13,7 @@ class Cell extends React.Component
 
     {
       c_div
+      c_label
       c_a
     } = CFX
 
@@ -23,7 +25,8 @@ class Cell extends React.Component
     ###
 
     {
-      cellTypes = [] ###
+      cellTypes = []
+      ###
         # List
         access: weui-cell_access
         swiped: weui-cell_swiped
@@ -36,7 +39,8 @@ class Cell extends React.Component
         'select-before': weui-cell_select-before
         'check-label': weui-check__label # weui-cell_check-label
       ###
-      cellObj ### cfx comp dom node
+      cellObj 
+      ### cfx comp dom node
         {
           hd:
           bd:
@@ -45,10 +49,10 @@ class Cell extends React.Component
       ###
     } = @props
 
-    t_Cell =
-      if 'access' in cellTypes
-      then c_a
-      else c_div
+    t_Cell = do ->
+      return c_label if 'check-label' in cellTypes
+      return c_a if 'access' in cellTypes
+      c_div
 
     className = (
       unless cellTypes.length is 0
@@ -57,9 +61,9 @@ class Cell extends React.Component
           r...
           if cellType is 'check-label'
           then "weui-check__label"
-          else "#{baseClass}_#{cellType}"
+          else "#{baseClass}__#{cellType}"
         ]
-      , [ baseClass ]
+      , [ baseClass ] 
       else [ baseClass ]
     ).join ' '
 
@@ -69,6 +73,7 @@ class Cell extends React.Component
       , cellChild
 
     cellParts = (cellObj) ->
+      console.log cellObj
       [
         'hd'
         'bd'

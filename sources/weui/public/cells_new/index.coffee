@@ -21,7 +21,8 @@ class CellsCell extends React.Component
       title = ''
       tips = ''
       cellsType = ''
-      cells = [] ###
+      cells = []
+      ###
         [
             cellTypes: []
             cellObj:

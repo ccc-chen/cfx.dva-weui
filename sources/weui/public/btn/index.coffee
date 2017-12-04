@@ -18,7 +18,6 @@ class Btn extends React.Component
     } = CFX
 
     {
-
       # load = false
       btnConf
       area
