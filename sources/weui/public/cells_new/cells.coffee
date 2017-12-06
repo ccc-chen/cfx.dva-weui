@@ -25,6 +25,7 @@ class Cells extends React.Component
         form: weui-cells_form
       ###
       cells # []
+      label = false
     } = @props
 
     [

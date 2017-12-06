@@ -1,10 +1,13 @@
 import { prefixDom } from 'cfx.dom'
 import React, { Component } from 'react'
 
+dd = (args...) -> console.log args
+
 CFX = prefixDom {
   'div'
   'label'
   'a'
+  'input'
 }
 
 class Cell extends React.Component
@@ -15,6 +18,7 @@ class Cell extends React.Component
       c_div
       c_label
       c_a
+      c_input
     } = CFX
 
     baseClass = 'weui-cell'
@@ -51,19 +55,22 @@ class Cell extends React.Component
 
     t_Cell = do ->
       return c_label if 'check-label' in cellTypes
+      return c_input if 'weui-check' in cellTypes
       return c_a if 'access' in cellTypes
       c_div
 
     className = (
       unless cellTypes.length is 0
-      then cellTypes.reduce (r, cellType) ->
-        [
-          r...
-          if cellType is 'check-label'
-          then "weui-check__label"
-          else "#{baseClass}__#{cellType}"
-        ]
-      , [ baseClass ] 
+      then (
+        cellTypes.reduce (r, cellType) ->
+          [
+            r...
+            if cellType is 'check-label'
+            then "weui-check__label"
+            else "#{baseClass}__#{cellType}"
+          ]
+        , [ baseClass ]
+      )
       else [ baseClass ]
     ).join ' '
 
@@ -73,7 +80,11 @@ class Cell extends React.Component
       , cellChild
 
     cellParts = (cellObj) ->
-      console.log cellObj
+      return (
+        if cellObj.$$typeof?
+        then [ cellPart partName, cellObj ]
+        else []
+      ) unless cellObj.bd?
       [
         'hd'
         'bd'
@@ -81,17 +92,10 @@ class Cell extends React.Component
       ].reduce (r, partName) ->
         [
           r...
-          ( do ->
-              if cellObj["#{partName}"]?
-                return [
-                  cellPart partName, cellObj["#{partName}"]
-                ]
-              else unless partName is 'bd'
-                return []
-              else
-                return [
-                  cellPart partName, cellObj
-                ]
+          (
+            if cellObj["#{partName}"]
+            then [ cellPart partName, cellObj["#{partName}"] ]
+            else []
           )...
         ]
       , []
